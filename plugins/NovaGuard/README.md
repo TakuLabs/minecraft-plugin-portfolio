@@ -1,5 +1,7 @@
 # NovaGuard
 
+`Java 21 · Paper · Maven · ProtocolLib · JUnit`
+
 Paper/Purpur security plugin focused on connection limits, access lists and packet-rate monitoring.
 
 ## Features
@@ -24,6 +26,6 @@ Paper/Purpur security plugin focused on connection limits, access lists and pack
 mvn clean package
 ```
 
-## Notes
+## Architecture
 
-The included tests use documentation-only IP addresses from `203.0.113.0/24`.
+The plugin separates configuration loading, access-list storage, known-player tracking and packet-rate decisions into focused services. The included tests use documentation-only IP addresses from `203.0.113.0/24`.

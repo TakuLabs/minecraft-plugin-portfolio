@@ -1,10 +1,16 @@
 # EmpireCrates
 
+`Java 21 · Paper · Maven · PlaceholderAPI · YAML`
+
 EmpireCrates is the largest standalone plugin in this portfolio. It implements a configurable crate system for Paper servers with admin tooling, reward definitions, visual opening flows and persistent crate state.
 
 The project is included as a flagship showcase because it combines several common Minecraft plugin concerns in one codebase: command handling, inventory GUIs, chat prompts, YAML persistence, optional plugin integrations and runtime visual behavior.
 
-## Feature Overview
+## Overview
+
+This project shows how a larger Paper plugin can keep gameplay logic, editor workflows, persistence and optional integrations separated while still behaving as one complete server feature.
+
+## Key Features
 
 ### Crate Configuration
 
@@ -59,7 +65,7 @@ The project is included as a flagship showcase because it combines several commo
 - Optional ModelEngine support via reflection so the plugin can still run without the dependency
 - Optional ItemsAdder/Excellent-style custom item data support through stored item tags
 
-## Architecture
+## Technical Structure
 
 The plugin is organized around a small set of focused packages:
 
@@ -71,6 +77,12 @@ The plugin is organized around a small set of focused packages:
 - `placeholder`: PlaceholderAPI expansion
 - `storage`: YAML-backed crate, placement and player progress persistence
 - `util`: text formatting, item helpers, chance calculation and optional integration bridges
+
+## Integrations
+
+- PlaceholderAPI for keyall timer placeholders
+- ModelEngine through reflection-based optional support
+- ItemsAdder/custom item data through stored item tags
 
 ## Requirements
 
@@ -88,6 +100,10 @@ mvn clean package
 ```
 
 The generated jar is intentionally not tracked in this portfolio repository.
+
+## Screenshots
+
+No screenshots are included yet. Useful future captures would be the admin dashboard, reward editor, crate preview and an opening animation.
 
 ## Why Included
 

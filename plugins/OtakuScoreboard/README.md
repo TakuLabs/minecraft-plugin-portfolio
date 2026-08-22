@@ -1,5 +1,7 @@
 # OtakuScoreboard
 
+`Java 21 · Paper · Maven · PlaceholderAPI · YAML`
+
 Configurable Paper scoreboard and tablist plugin.
 
 ## Features
@@ -24,6 +26,6 @@ Configurable Paper scoreboard and tablist plugin.
 mvn clean package
 ```
 
-## Notes
+## Architecture
 
 This is a smaller showcase plugin for repeated UI updates, placeholders and player-facing commands.

@@ -1,5 +1,7 @@
 # BirthdayEvent
 
+`Java 21 · Paper · Maven · JUnit`
+
 Small Paper plugin for running a configured one-day birthday event.
 
 ## Features
@@ -22,6 +24,6 @@ Small Paper plugin for running a configured one-day birthday event.
 mvn clean package
 ```
 
-## Notes
+## Architecture
 
-The example configuration uses a neutral placeholder player name. This project is included as part of my Minecraft development portfolio.
+The project keeps date-window logic, reward selection and persistent claim state small enough to test directly. The example configuration uses a neutral placeholder player name.

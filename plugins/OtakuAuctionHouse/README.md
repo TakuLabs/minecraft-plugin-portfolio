@@ -1,5 +1,7 @@
 # OtakuAuctionHouse
 
+`Java 21 · Paper · Maven · Vault · YAML`
+
 Paper auction house plugin for listing and buying player items.
 
 ## Features
@@ -23,6 +25,6 @@ Paper auction house plugin for listing and buying player items.
 mvn clean package
 ```
 
-## Notes
+## Architecture
 
 This project is useful as a portfolio sample because it shows GUI flow, economy integration, model classes and persistent item serialization.

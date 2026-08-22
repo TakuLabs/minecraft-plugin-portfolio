@@ -1,90 +1,127 @@
-# TakuLabs - Minecraft Plugin Development
+# TakuLabs
+## Minecraft Plugin Development
 
-[![Java](https://img.shields.io/badge/Java-21-orange.svg)](#technologies)
-[![Paper API](https://img.shields.io/badge/Paper%20API-1.21.x-blue.svg)](#technologies)
-[![Maven](https://img.shields.io/badge/Build-Maven-red.svg)](#technologies)
+Java-based Minecraft plugin development focused on clean server systems, gameplay features and maintainable Paper plugins.
 
-This repository contains a curated selection of Minecraft Java projects and standalone development examples.
-It shows how I structure plugins, work with the Paper/Bukkit API, handle YAML configuration and implement common server features.
+[![Java 21](https://img.shields.io/badge/Java-21-2f3437?style=flat-square&logo=openjdk&logoColor=white)](#technologies)
+[![Paper 1.21.x](https://img.shields.io/badge/Paper-1.21.x-2f3437?style=flat-square)](#technologies)
+[![Maven](https://img.shields.io/badge/Maven-Build-2f3437?style=flat-square&logo=apachemaven&logoColor=white)](#technologies)
+[![Minecraft Plugins](https://img.shields.io/badge/Minecraft-Plugins-2f3437?style=flat-square)](#featured-project)
 
-The portfolio is intentionally focused. It is not a full archive of every private server system or experiment.
+This repository contains a curated selection of standalone Minecraft Java projects and small core examples. It is intentionally focused: not a full private server archive, but a practical look at how I structure Paper plugins, configuration-heavy systems and common server features.
 
-## Technologies
+---
 
-- Java 21
-- Paper API
-- Bukkit API
-- Maven
-- YAML configuration
-- Vault API in selected projects
-- PlaceholderAPI in selected projects
-- ProtocolLib in NovaGuard
+## Featured Project
 
-## Featured Projects
+### [EmpireCrates](plugins/EmpireCrates)
 
-### [BirthdayEvent](plugins/BirthdayEvent)
+Flagship standalone crate system with admin tooling, configurable rewards, visual opening behavior and persistent crate state.
 
-Small event plugin for a configured birthday event window.
-
-- Timezone-aware scheduling
-- Configurable messages and reward command
-- Restart-safe event and congratulation state
-- Unit tests for event and reward logic
-
-### [EmpireCrates](plugins/EmpireCrates) - Featured Showcase
-
-Larger standalone crate system with admin tooling, configurable rewards, visual opening behavior and persistent crate state.
+`Java 21 · Paper · Maven · PlaceholderAPI · YAML`
 
 - YAML-backed crate, key and reward definitions
 - Admin GUI flow with chat prompts for editing crate settings
 - Item and command rewards with rarity, chance and broadcast controls
 - Persistent placed crate and player milestone progress storage
 - GUI and block-based opening animations with particles and sounds
-- Optional PlaceholderAPI, ModelEngine and custom-item integration points
+- Optional ModelEngine and custom-item integration points
 
-### [OtakuAuctionHouse](plugins/OtakuAuctionHouse)
+Screenshots are not included yet. Good future captures would be the admin GUI, reward editor, crate preview and opening animation.
 
-Auction house plugin for listing, browsing and buying player items.
+---
 
-- Vault economy integration
-- Inventory menus for listing, filtering and confirmations
-- Item serialization for persisted listings
-- Permission-based listing limits
+## Projects
 
-### [NovaGuard](plugins/NovaGuard)
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3><a href="plugins/BirthdayEvent">BirthdayEvent</a></h3>
+      <p>Small event plugin for a configured birthday event window.</p>
+      <ul>
+        <li>Timezone-aware scheduling</li>
+        <li>Configurable messages and reward command</li>
+        <li>Restart-safe state with unit tests</li>
+      </ul>
+      <p><code>Java 21 · Paper · Maven · JUnit</code></p>
+    </td>
+    <td width="50%" valign="top">
+      <h3><a href="plugins/OtakuAuctionHouse">OtakuAuctionHouse</a></h3>
+      <p>Auction house plugin for listing, browsing and buying player items.</p>
+      <ul>
+        <li>Vault economy integration</li>
+        <li>Inventory menus for listings and confirmations</li>
+        <li>Serialized item storage and listing limits</li>
+      </ul>
+      <p><code>Java 21 · Paper · Maven · Vault · YAML</code></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3><a href="plugins/NovaGuard">NovaGuard</a></h3>
+      <p>Server protection plugin focused on connection and packet safeguards.</p>
+      <ul>
+        <li>IP account limits</li>
+        <li>Whitelist and blacklist handling</li>
+        <li>ProtocolLib packet-rate monitoring with tests</li>
+      </ul>
+      <p><code>Java 21 · Paper · Maven · ProtocolLib · JUnit</code></p>
+    </td>
+    <td width="50%" valign="top">
+      <h3><a href="plugins/OtakuScoreboard">OtakuScoreboard</a></h3>
+      <p>Configurable scoreboard and tablist plugin.</p>
+      <ul>
+        <li>YAML-driven scoreboard rendering</li>
+        <li>PlaceholderAPI integration</li>
+        <li>Tablist, nametag and player toggle services</li>
+      </ul>
+      <p><code>Java 21 · Paper · Maven · PlaceholderAPI · YAML</code></p>
+    </td>
+  </tr>
+</table>
 
-Server protection plugin focused on connection and packet safeguards.
+---
 
-- IP account limits
-- UUID/IP whitelist and blacklist handling
-- ProtocolLib packet monitoring
-- Token-bucket rate limiting with tests
+## Development Focus
 
-### [OtakuScoreboard](plugins/OtakuScoreboard)
+- Modular plugin structure
+- Configuration-driven systems
+- Inventory GUI workflows
+- Persistent data handling
+- Paper/Bukkit event architecture
+- External API integrations through soft dependencies where possible
 
-Configurable scoreboard and tablist plugin.
+## Technologies
 
-- YAML-driven scoreboard rendering
-- PlaceholderAPI integration
-- Tablist and nametag services
-- Player toggle and reload commands
+**Core:** `Java 21` · `Paper API` · `Bukkit API` · `Maven` · `YAML`
+
+**Selected integrations:** `Vault` · `PlaceholderAPI` · `ProtocolLib` · `ModelEngine`
 
 ## Selected Core Examples
 
-The complete core project is private. This repository only contains selected standalone examples intended to demonstrate code structure, architecture and development practices.
+The complete private core is not included. Only small standalone examples are published.
 
-- [Message helper](core-examples/message-helper)
-- [Offline player resolver](core-examples/offline-player-resolver)
-- [Trade session state](core-examples/trade-session-state)
+- [Message Helper](core-examples/message-helper) — formatted MiniMessage help output and legacy RGB gradient helpers.
+- [Offline Player Resolver](core-examples/offline-player-resolver) — UUID/name lookup helper for Bukkit `OfflinePlayer` resolution.
+- [Trade Session State](core-examples/trade-session-state) — small state model for expiring trade requests and ready-state handling.
 
 ## Documentation
 
-- [Project notes](docs/projects.md)
-- [Architecture notes](docs/architecture.md)
-- [Project selection](docs/evaluation.md)
+- [Project Overview](docs/projects.md)
+- [Architecture](docs/architecture.md)
+- [Project Selection](docs/evaluation.md)
+
+## Repository Structure
+
+```text
+minecraft-plugin-portfolio/
+├─ plugins/
+├─ core-examples/
+└─ docs/
+```
 
 ## About
 
-I focus on Java-based Minecraft server development, primarily building smaller plugins and focused gameplay or server systems. This portfolio provides a practical overview of how I structure code, work with the Paper API and implement common server features.
+I focus on Java-based Minecraft server development, building smaller plugins and focused server systems. This repository provides a practical look at how I structure and implement those projects.
 
 No generated jars or private server deployment files are included.
