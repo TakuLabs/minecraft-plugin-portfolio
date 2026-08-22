@@ -16,7 +16,7 @@ class CongratulationRegistryTest {
     @Test
     void newUuidCanCongratulate() {
         CongratulationRegistry registry = new CongratulationRegistry(List.of());
-        CongratulationClaim claim = registry.tryBegin(UUID.randomUUID(), "ExamplePlayer", new RewardSelection("tool", 1), Instant.now());
+        CongratulationClaim claim = registry.tryBegin(UUID.randomUUID(), "ExampleFan", new RewardSelection("tool", 1), Instant.now());
         assertTrue(claim.accepted());
     }
 
@@ -24,8 +24,8 @@ class CongratulationRegistryTest {
     void sameUuidCannotCongratulateTwice() {
         CongratulationRegistry registry = new CongratulationRegistry(List.of());
         UUID uuid = UUID.randomUUID();
-        assertTrue(registry.tryBegin(uuid, "ExamplePlayer", new RewardSelection("tool", 1), Instant.now()).accepted());
-        assertFalse(registry.tryBegin(uuid, "ExamplePlayer", new RewardSelection("tool", 1), Instant.now()).accepted());
+        assertTrue(registry.tryBegin(uuid, "ExampleFan", new RewardSelection("tool", 1), Instant.now()).accepted());
+        assertFalse(registry.tryBegin(uuid, "ExampleFan", new RewardSelection("tool", 1), Instant.now()).accepted());
     }
 
     @Test

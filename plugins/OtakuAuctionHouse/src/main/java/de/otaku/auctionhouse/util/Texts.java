@@ -31,7 +31,7 @@ public final class Texts {
     }
 
     public Component prefixed(String text) {
-        String prefix = plugin.getConfig().getString("colors.prefix", "<dark_gray>[</dark_gray><bold><gradient:#6D28D9:#06B6D4>MythicAH</gradient></bold><dark_gray>]</dark_gray> ");
+        String prefix = plugin.getConfig().getString("colors.prefix", "<dark_gray>[</dark_gray><bold><gradient:#6D28D9:#06B6D4>ExampleAH</gradient></bold><dark_gray>]</dark_gray> ");
         return parse(prefix + text);
     }
 

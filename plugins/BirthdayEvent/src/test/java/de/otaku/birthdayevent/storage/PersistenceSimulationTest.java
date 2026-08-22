@@ -15,12 +15,12 @@ class PersistenceSimulationTest {
     void uuidRemainsKnownAfterRegistryReloadSimulation() {
         UUID uuid = UUID.randomUUID();
         CongratulationRegistry beforeReload = new CongratulationRegistry(List.of());
-        assertTrue(beforeReload.tryBegin(uuid, "ExamplePlayer", new RewardSelection("nova", 2), Instant.now()).accepted());
+        assertTrue(beforeReload.tryBegin(uuid, "ExampleFan", new RewardSelection("nova", 2), Instant.now()).accepted());
         beforeReload.complete(uuid);
 
         CongratulationRegistry afterReload = new CongratulationRegistry(beforeReload.snapshot());
         assertTrue(afterReload.hasCongratulated(uuid));
-        assertFalse(afterReload.tryBegin(uuid, "ExamplePlayer", new RewardSelection("nova", 2), Instant.now()).accepted());
+        assertFalse(afterReload.tryBegin(uuid, "ExampleFan", new RewardSelection("nova", 2), Instant.now()).accepted());
     }
 
     @Test

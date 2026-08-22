@@ -1613,7 +1613,7 @@ crates:
           type: PAPER
           amount: 1
         command: lp user %player% parent addtemp skyempire 6months
-      _owner_exampleplayer_plshie__1:
+      _owner_exampleplayer__plshie__1:
         display-name: <gradient:#F5B642:#9B4DFF>❋ Owner ExamplePlayer Plüshie ❋</gradient>
         type: ITEM
         rarity: MYSTISCH

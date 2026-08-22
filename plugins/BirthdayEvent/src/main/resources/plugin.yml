@@ -9,7 +9,7 @@ commands:
   birthdayevent:
     description: BirthdayEvent Event-Command.
     usage: /birthdayevent <help|status|test|testall|reload|gratulieren>
-    aliases: [ybirthday, birthday]
+    aliases: [bevent, geburtstag]
 
 permissions:
   birthdayevent.admin:
