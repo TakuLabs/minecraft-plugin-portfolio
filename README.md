@@ -8,7 +8,7 @@ Java-based Minecraft plugin development focused on clean server systems, gamepla
 [![Maven](https://img.shields.io/badge/Maven-Build-2f3437?style=flat-square&logo=apachemaven&logoColor=white)](#technologies)
 [![Minecraft Plugins](https://img.shields.io/badge/Minecraft-Plugins-2f3437?style=flat-square)](#featured-project)
 
-This repository contains a curated selection of standalone Minecraft Java projects and small core examples. It is intentionally focused: not a full private server archive, but a practical look at how I structure Paper plugins, configuration-heavy systems and common server features.
+This repository contains a curated selection of Minecraft Java projects and small core examples. It is intentionally focused: not a full private server archive, but a practical look at how I structure Paper plugins, extracted systems and common server features.
 
 ---
 
@@ -16,16 +16,16 @@ This repository contains a curated selection of standalone Minecraft Java projec
 
 ### [EmpireCrates](plugins/EmpireCrates)
 
-Flagship standalone crate system with admin tooling, configurable rewards, visual opening behavior and persistent crate state.
+Flagship crate-system module extracted from a larger private server core and prepared as a focused public showcase.
 
 `Java 21 · Paper · Maven · PlaceholderAPI · YAML`
 
 - YAML-backed crate, key and reward definitions
 - Admin GUI flow with chat prompts for editing crate settings
 - Item and command rewards with rarity, chance and broadcast controls
+- Physical crate keys with PersistentDataContainer-based validation
 - Persistent placed crate and player milestone progress storage
 - GUI and block-based opening animations with particles and sounds
-- Optional ModelEngine and custom-item integration points
 
 <p align="center">
   <img src="assets/empirecrates/crate-showcase.gif" alt="EmpireCrates in-game crate showcase" width="880">

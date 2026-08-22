@@ -2,13 +2,13 @@
 
 `Java 21 · Paper · Maven · PlaceholderAPI · YAML`
 
-EmpireCrates is the largest standalone plugin in this portfolio. It implements a configurable crate system for Paper servers with admin tooling, reward definitions, visual opening flows and persistent crate state.
+EmpireCrates is a crate-system module originally developed as part of a larger private Minecraft server core. For this portfolio, the relevant crate system has been extracted and prepared as a focused showcase of its architecture, gameplay logic and administrative tooling.
 
-The project is included as a flagship showcase because it combines several common Minecraft plugin concerns in one codebase: command handling, inventory GUIs, chat prompts, YAML persistence, optional plugin integrations and runtime visual behavior.
+The full private core is not included. This showcase focuses on the Crates module and the surrounding code needed to demonstrate command handling, inventory GUIs, chat prompts, YAML persistence, optional plugin integrations and runtime visual behavior.
 
 ## Overview
 
-This project shows how a larger Paper plugin can keep gameplay logic, editor workflows, persistence and optional integrations separated while still behaving as one complete server feature.
+This project shows how a larger private-core feature can be isolated for review while keeping the Crates module's gameplay logic, editor workflows, persistence and optional integrations understandable.
 
 <p align="center">
   <img src="../../assets/empirecrates/crate-showcase.gif" alt="EmpireCrates in-game crate showcase" width="880">
@@ -25,6 +25,16 @@ This project shows how a larger Paper plugin can keep gameplay logic, editor wor
 - Per-crate opening animation and aura settings
 - Optional milestone rewards after a configured number of openings
 - Bundled example crate data installed when no crate configuration exists yet
+
+### Physical Keys
+
+- Physical crate keys are created through `MarkedItems.markKey(...)`
+- The generated item receives a plugin-scoped `PersistentDataContainer` value named `key_id`
+- Opening a key-required crate scans the player's inventory for a key whose stored `key_id` matches the crate's configured key ID
+- Unmarked items or keys marked for a different crate are ignored
+- A matching key stack is reduced by one before the opening animation and reward flow continue
+
+This validates crate keys against lookalike items and wrong-crate keys. It does not claim unique per-item serial numbers or a global consumed-key registry.
 
 ### Reward System
 
@@ -126,4 +136,4 @@ The generated jar is intentionally not tracked in this portfolio repository.
 
 ## Why Included
 
-EmpireCrates shows a fuller gameplay system than a small single-purpose plugin. It is useful as a portfolio centerpiece because it demonstrates how I structure stateful Paper plugins that need configuration, GUI workflows, persistence, optional integrations and user-facing gameplay behavior without relying on a private core project.
+EmpireCrates is useful as a portfolio centerpiece because it demonstrates how a larger private-core feature is structured internally: configuration, GUI workflows, key validation, persistence, optional integrations and user-facing gameplay behavior are visible without publishing the complete private core.

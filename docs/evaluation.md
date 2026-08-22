@@ -8,12 +8,12 @@ Included projects were selected based on:
 - code structure
 - technical variety
 - independence from private server infrastructure
-- suitability as standalone examples
+- suitability as public, focused examples
 
 ## Included Projects
 
 - `BirthdayEvent`: demonstrates scheduled event logic, configuration loading, state persistence and unit-tested reward selection.
-- `EmpireCrates`: serves as the flagship showcase for a larger gameplay system with crate definitions, reward handling, inventory GUIs, chat prompts, visual opening behavior, storage classes and optional integrations.
+- `EmpireCrates`: serves as the flagship showcase for an extracted private-core module with crate definitions, physical key validation, reward handling, inventory GUIs, chat prompts, visual opening behavior, storage classes and optional integrations.
 - `OtakuAuctionHouse`: demonstrates menu-driven item listings, Vault economy integration and serialized item storage.
 - `NovaGuard`: shows service-oriented protection logic with IP account limits, access lists, ProtocolLib packet monitoring and tests.
 - `OtakuScoreboard`: demonstrates configuration-driven scoreboard and tablist rendering with PlaceholderAPI support.

@@ -10,9 +10,9 @@ Shows time-based event logic, YAML settings, Paper commands/listeners, persisten
 
 ### EmpireCrates
 
-Purpose: configurable crate system with rewards, admin tooling, visual opening behavior and player progress.
+Purpose: extracted crate-system module with rewards, admin tooling, visual opening behavior and player progress.
 
-Shows the largest standalone showcase in this portfolio: YAML-backed crate definitions, item and command rewards, rarity/chance handling, admin GUIs, chat prompts, placed crate storage, player milestone progress, PlaceholderAPI support and optional ModelEngine/custom-item integration points.
+Shows the largest focused showcase in this portfolio. EmpireCrates originated inside a larger private core and has been prepared here to demonstrate YAML-backed crate definitions, item and command rewards, physical key validation, rarity/chance handling, admin GUIs, chat prompts, placed crate storage, player milestone progress, PlaceholderAPI support and optional ModelEngine/custom-item integration points.
 
 ### OtakuAuctionHouse
 
