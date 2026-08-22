@@ -31,14 +31,16 @@ Small event plugin for a configured birthday event window.
 - Restart-safe event and congratulation state
 - Unit tests for event and reward logic
 
-### [EmpireCrates](plugins/EmpireCrates)
+### [EmpireCrates](plugins/EmpireCrates) - Featured Showcase
 
-Crate system with configurable rewards, GUI management and visual opening flow.
+Larger standalone crate system with admin tooling, configurable rewards, visual opening behavior and persistent crate state.
 
-- YAML-based crate and reward configuration
-- Inventory GUI flow with chat prompts
-- Persistent crate and player progress storage
-- PlaceholderAPI support
+- YAML-backed crate, key and reward definitions
+- Admin GUI flow with chat prompts for editing crate settings
+- Item and command rewards with rarity, chance and broadcast controls
+- Persistent placed crate and player milestone progress storage
+- GUI and block-based opening animations with particles and sounds
+- Optional PlaceholderAPI, ModelEngine and custom-item integration points
 
 ### [OtakuAuctionHouse](plugins/OtakuAuctionHouse)
 

@@ -318,7 +318,7 @@ public class CrateCommand implements CommandExecutor, TabCompleter {
     private void sendInfo(CommandSender sender) {
         String version = plugin.getPluginMeta().getVersion();
         sender.sendMessage(Text.mm("<gradient:#7CFFB2:#F5B642>EmpireCrates Plugin</gradient> <gray>Version</gray> <gradient:#F5B642:#9B4DFF>" + version + "</gradient>"));
-        sender.sendMessage(Text.mm("<gray>Otakus Crate Plugin</gray>"));
+        sender.sendMessage(Text.mm("<gray>Configurable Paper crate plugin.</gray>"));
         sender.sendMessage(Text.mm("<gray>Autor: </gray><green>ExamplePlayer</green>"));
     }
 }

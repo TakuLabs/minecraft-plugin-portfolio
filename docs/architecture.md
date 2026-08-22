@@ -7,6 +7,7 @@
 - Java 21 compilation
 - YAML configuration for user-facing messages and feature settings
 - Separate packages for commands, listeners, models, storage, services and utilities where the plugin size justifies it
+- Optional integration code is kept behind soft dependencies or reflection in projects that can run without the extra plugin
 
 ## Plugin Structure
 
@@ -26,6 +27,8 @@ src/main/resources/
 ```
 
 Not every plugin has every package. Smaller plugins keep fewer classes; larger plugins split command, GUI, storage and model logic more clearly.
+
+`EmpireCrates` is the broadest example in the repository. It combines command handling, GUI state, chat prompt editing, YAML persistence, reward models, optional PlaceholderAPI/ModelEngine integration and runtime visual behavior in one standalone plugin.
 
 ## Core Examples
 

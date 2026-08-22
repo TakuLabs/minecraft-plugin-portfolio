@@ -2,7 +2,7 @@ theme:
   prefix: "<bold><gradient:#f5b642:#9b4dff>EmpireCrates</gradient></bold> <dark_gray>></dark_gray> "
 messages:
   no-permission: "<gradient:#ff5f6d:#ffc371>Dazu hast du keine Rechte.</gradient>"
-  reloaded: "<gradient:#7CFFB2:#48C6EF>Otakus Crates wurde neu geladen.</gradient>"
+  reloaded: "<gradient:#7CFFB2:#48C6EF>EmpireCrates wurde neu geladen.</gradient>"
   crate-created: "<gradient:#7CFFB2:#F5B642>Crate %crate% wurde erstellt.</gradient>"
   crate-removed: "<gradient:#ff5f6d:#9b4dff>Crate %crate% wurde gelöscht.</gradient>"
   need-key: "<gradient:#ff5f6d:#ffc371>Du brauchst den passenden Crate Key.</gradient>"

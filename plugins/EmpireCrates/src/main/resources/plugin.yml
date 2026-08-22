@@ -3,7 +3,7 @@ version: 1.14.5
 main: de.otaku.empirecrates.EmpireCratesPlugin
 api-version: '1.21'
 author: ExamplePlayer
-description: Otakus Crate Plugin
+description: Configurable Paper crate plugin.
 softdepend:
   - ItemsAdder
   - ModelEngine
@@ -11,7 +11,7 @@ softdepend:
 commands:
   empirecrates:
     aliases: [crate, crates, ocrates]
-    description: Opens the Otakus Crates admin GUI.
+    description: Opens the EmpireCrates admin GUI.
     usage: /<command> [help|admin|set|model|remove|givekey|givecrate|keyall|reload]
     permission: empirecrates.admin
     permission-message: ""

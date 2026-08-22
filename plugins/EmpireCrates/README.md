@@ -1,15 +1,76 @@
 # EmpireCrates
 
-Paper crate plugin with configurable rewards, GUI management and visual crate opening behavior.
+EmpireCrates is the largest standalone plugin in this portfolio. It implements a configurable crate system for Paper servers with admin tooling, reward definitions, visual opening flows and persistent crate state.
 
-## Features
+The project is included as a flagship showcase because it combines several common Minecraft plugin concerns in one codebase: command handling, inventory GUIs, chat prompts, YAML persistence, optional plugin integrations and runtime visual behavior.
 
-- YAML-based crate and reward configuration
-- Inventory GUI management
-- Chat prompt flow for admin setup
-- Persistent placed crate and player progress storage
-- Reward rarity and chance handling
-- PlaceholderAPI support
+## Feature Overview
+
+### Crate Configuration
+
+- YAML-backed crate definitions in `crates.yml`
+- Configurable crate item, key item, display name and key requirement
+- Per-crate opening animation and aura settings
+- Optional milestone rewards after a configured number of openings
+- Bundled example crate data installed when no crate configuration exists yet
+
+### Reward System
+
+- Item rewards and command rewards
+- Rarity model with default chance percentages
+- Explicit `chance-percent` support per reward
+- Broadcast flags for notable rewards
+- Legacy weight conversion for older reward configuration
+- Optional ExcellentCrates-style item tag parsing for complex item rewards
+
+### Admin Tools
+
+- `/empirecrates admin` inventory management flow
+- `/empirecrates set`, `model`, `remove`, `givekey`, `givecrate`, `keyall` and `reload`
+- `/keyall` shortcut command for online key distribution
+- Tab completion for crate IDs and command arguments
+- Chat prompts for editing names, commands, chances and integration values
+
+### GUI System
+
+- Multi-screen inventory editor for crate settings, key settings, reward lists and reward details
+- Preview screens for configured rewards
+- Click-based editing for reward type, rarity, animation and aura
+- Separate holder types for admin, preview and reward editing menus
+
+### Persistence
+
+- `CrateStorage` for crate and reward definitions
+- `PlacedCrateStorage` for placed crate locations
+- `PlayerProgressStorage` for per-player milestone progress
+- Save and reload flow that refreshes runtime crate visuals
+
+### Visuals
+
+- Block-based crate opening flow
+- GUI roulette and wheel-style opening animations
+- Particle and sound feedback during openings
+- Hologram-style reward display behavior
+- Optional ModelEngine model IDs with idle, open and close animation names
+
+### Integrations
+
+- PlaceholderAPI expansion for keyall timer information
+- Optional ModelEngine support via reflection so the plugin can still run without the dependency
+- Optional ItemsAdder/Excellent-style custom item data support through stored item tags
+
+## Architecture
+
+The plugin is organized around a small set of focused packages:
+
+- `command`: command dispatch and tab completion
+- `gui`: inventory screens, chat prompts and editor state
+- `keyall`: scheduled key distribution service
+- `listener`: crate placement, interaction, reward delivery and visual opening behavior
+- `model`: crate, reward, rarity, animation and aura data structures
+- `placeholder`: PlaceholderAPI expansion
+- `storage`: YAML-backed crate, placement and player progress persistence
+- `util`: text formatting, item helpers, chance calculation and optional integration bridges
 
 ## Requirements
 
@@ -17,6 +78,8 @@ Paper crate plugin with configurable rewards, GUI management and visual crate op
 - Paper 1.21.x
 - Maven
 - PlaceholderAPI optional/provided
+- ModelEngine optional
+- ItemsAdder optional
 
 ## Building
 
@@ -24,6 +87,8 @@ Paper crate plugin with configurable rewards, GUI management and visual crate op
 mvn clean package
 ```
 
-## Notes
+The generated jar is intentionally not tracked in this portfolio repository.
 
-This project demonstrates a larger standalone gameplay system with commands, listeners, GUIs, config loading and storage classes.
+## Why Included
+
+EmpireCrates shows a fuller gameplay system than a small single-purpose plugin. It is useful as a portfolio centerpiece because it demonstrates how I structure stateful Paper plugins that need configuration, GUI workflows, persistence, optional integrations and user-facing gameplay behavior without relying on a private core project.
