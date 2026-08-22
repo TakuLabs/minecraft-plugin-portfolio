@@ -1,0 +1,40 @@
+# NovaGuard configuration.
+# Defaults are intentionally conservative. Packet protection starts in MONITOR mode
+# so you can observe real traffic before enabling automatic disconnects.
+
+ip-limit:
+  enabled: true
+  max-accounts-per-ip: 15
+  reservation-timeout-seconds: 30
+
+packet-protection:
+  enabled: true
+  mode: MONITOR # MONITOR or ENFORCE
+  sustained-limit: 450
+  burst-limit: 800
+  violation-threshold: 3
+  violation-reset-seconds: 10
+  custom-payload:
+    enabled: true
+    separate-limit: true
+    sustained-limit: 80
+    burst-limit: 160
+  packet-weights:
+    movement: 1.0
+    inventory: 1.5
+    interaction: 1.5
+    command: 2.0
+    chat: 1.5
+    custom-payload: 3.0
+    other: 1.0
+
+logging:
+  debug: false
+  log-full-ips: false
+
+storage:
+  save-last-known-player-name: true
+  batch-writes: true
+
+connection-history:
+  retention-days: 30

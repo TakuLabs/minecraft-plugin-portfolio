@@ -1,0 +1,17 @@
+name: BirthdayEvent
+version: 1.0.0
+main: de.otaku.birthdayevent.BirthdayEvent
+api-version: '1.21'
+author: ExamplePlayer
+description: Einmaliges ExampleSMP Geburtstagsevent für BirthdayPlayer.
+
+commands:
+  birthdayevent:
+    description: BirthdayEvent Event-Command.
+    usage: /birthdayevent <help|status|test|testall|reload|gratulieren>
+    aliases: [ybirthday, birthday]
+
+permissions:
+  birthdayevent.admin:
+    description: Erlaubt Admin-Befehle von BirthdayEvent.
+    default: op

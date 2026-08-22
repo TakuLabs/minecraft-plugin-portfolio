@@ -1,0 +1,27 @@
+name: OtakuAuctionHouse
+version: '1.1.5'
+main: de.otaku.auctionhouse.OtakuAuctionHousePlugin
+api-version: '1.21'
+author: ExamplePlayer
+description: ExampleNetwork Hauseigenes Auktions Plugin
+depend:
+  - Vault
+softdepend:
+  - ItemsAdder
+commands:
+  ah:
+    description: Öffnet das Mythic Auktionshaus.
+    usage: /ah
+    aliases:
+      - auctionhouse
+      - auktion
+permissions:
+  otakuauctionhouse.use:
+    description: Erlaubt das Öffnen des Auktionshauses.
+    default: true
+  otakuauctionhouse.sell:
+    description: Erlaubt das Verkaufen von Items.
+    default: true
+  otakuauctionhouse.admin:
+    description: Erlaubt Admin-Funktionen.
+    default: op

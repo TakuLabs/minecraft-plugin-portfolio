@@ -1,0 +1,110 @@
+enabled: true
+
+# Update interval in ticks. 20 ticks = 1 second.
+update-interval: 1
+
+# Permission needed to see the scoreboard. Leave empty to show it to everyone.
+view-permission: ""
+
+integrations:
+  placeholderapi: true
+  placeholderapi-brackets: true
+  placeholder-passes: 3
+  itemsadder-font-images: true
+
+messages:
+  no-permission: "<red>Dazu hast du keine Rechte.</red>"
+  reload: "<gradient:#22D3EE:#8B5CF6>OtakuScoreboard wurde neu geladen.</gradient>"
+  toggled-on: "<gradient:#22D3EE:#3B82F6>Scoreboard aktiviert.</gradient>"
+  toggled-off: "<gray>Scoreboard deaktiviert.</gray>"
+  rainbow-on: "<gradient:#ff004c:#fffb00:#00ff95:#00c8ff:#a855f7>Rainbow-Tablist aktiviert.</gradient>"
+  rainbow-off: "<gray>Rainbow-Tablist deaktiviert.</gray>"
+
+scoreboard:
+  title: "<gradient:#22D3EE:#3B82F6:#8B5CF6><bold>✦ Example Network ✦</bold></gradient>"
+  lines:
+    - "<dark_gray>━━━━━━━━━━━━━━━━━━━━━━</dark_gray>"
+    - "<gradient:#22D3EE:#3B82F6><bold>⛁ SERVER</bold></gradient>"
+    - "&8│ &7Online     &8» <#22D3EE>%online%</#22D3EE>"
+    - "&8│ &7Server   &8» <#60A5FA>%world%</#60A5FA>"
+    - ""
+    - "<gradient:#3B82F6:#8B5CF6><bold>✦ DEINE INFOS</bold></gradient>"
+    - "&8│ &7Geld        &8» <#22D3EE>%vault_eco_balance_formatted%</#22D3EE>"
+    - "&8│ &7Flugzeit   &8» <#3B82F6>%tempfly_time-formatted%</#3B82F6>"
+    - "&8│ &7Spielzeit   &8» <#8B5CF6>%playtime_time%</#8B5CF6>"
+    - "&8│ &7KeyAll      &8» <#A855F7>%empirecrates_keyall_time%</#A855F7>"
+    - "<dark_gray>━━━━━━━━━━━━━━━━━━━━━━</dark_gray>"
+
+tablist:
+  enabled: true
+  rainbow:
+    enabled-by-default: false
+    speed-ticks: 4
+    color-step: 0.045
+    move-step: 0.012
+    saturation: 0.72
+    brightness: 1.0
+    bold: false
+  groups:
+    _DEFAULT_:
+      tabprefix: "%luckperms_prefix% "
+      tagprefix: "%luckperms_prefix% "
+      customtabname: "%otakuchatcolor_name%"
+      tabsuffix: " %animation:suffix_rotation%"
+  animations:
+    suffix_rotation:
+      change-interval: 10000
+      texts:
+        - "%otakumarry_display%"
+        - "%advancedtags_unvan%"
+  header:
+    - ""
+    - "&8&m━━━━━━━━━━━━━━━━━━━━&r"
+    - ""
+    - "<gradient:#2AFADF:#3B82F6:#8B5CF6>&lExample Network</gradient>"
+    - "&7Survival • Economy • Claims"
+    - ""
+    - "&fRang: %luckperms_prefix%"
+    - ""
+    - "&8&m━━━━━━━━━━━━━━━━━━━━&r"
+    - ""
+  footer:
+    - ""
+    - "&7Willkommen auf <gradient:#22D3EE:#2563EB:#A855F7>&lSurvival</gradient>"
+    - ""
+    - "&f➜ <#22D3EE>/daily</#22D3EE> &7• Belohnungen"
+    - "&f➜ <#3B82F6>/store</#3B82F6> &7• Shop"
+    - "&f➜ <#A855F7>/dc</#A855F7> &7• Discord"
+    - ""
+    - "&8&m━━━━━━━━━━━━━━━━━━━━&r"
+    - ""
+
+scoreboard-teams:
+  enabled: true
+  enable-collision: true
+  invisible-nametags: false
+  nametag:
+    enabled: true
+    prefix: "%luckperms_prefix% "
+    suffix: ""
+  armorstand:
+    enabled: false
+    text: "%luckperms_prefix% %player%"
+    small: true
+    marker: true
+    hide-vanilla-nametag: true
+    disable-belowname-while-enabled: true
+  belowname:
+    enabled: false
+    title: "<red>❤</red>"
+    value: "%health%"
+  sorting-types:
+    - "GROUPS:owner,manager,sradmin,admin,staff,dev,srmod,mod,builder,supporter,helper,tiktok,twitcher,youtuber,kick,artist,partner,donator,skyempire,skylord,mvip_plus,overlord,ultimate,champion,master,hero,elite,default"
+    - "PLACEHOLDER_A_TO_Z:%player%"
+  group-placeholders:
+    - "%luckperms_primary_group_name%"
+    - "%luckperms_primary_group%"
+    - "%luckperms_group%"
+  case-sensitive-sorting: true
+  can-see-friendly-invisibles: false
+  disable-condition: "%world%=disabledworld"

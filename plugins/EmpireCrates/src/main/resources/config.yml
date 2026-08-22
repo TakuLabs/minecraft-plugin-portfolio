@@ -1,0 +1,70 @@
+theme:
+  prefix: "<bold><gradient:#f5b642:#9b4dff>EmpireCrates</gradient></bold> <dark_gray>></dark_gray> "
+messages:
+  no-permission: "<gradient:#ff5f6d:#ffc371>Dazu hast du keine Rechte.</gradient>"
+  reloaded: "<gradient:#7CFFB2:#48C6EF>Otakus Crates wurde neu geladen.</gradient>"
+  crate-created: "<gradient:#7CFFB2:#F5B642>Crate %crate% wurde erstellt.</gradient>"
+  crate-removed: "<gradient:#ff5f6d:#9b4dff>Crate %crate% wurde gelöscht.</gradient>"
+  need-key: "<gradient:#ff5f6d:#ffc371>Du brauchst den passenden Crate Key.</gradient>"
+  no-rewards: "<gradient:#ff5f6d:#ffc371>Diese Crate hat noch keine Rewards.</gradient>"
+  already-opening: "<gradient:#ff5f6d:#ffc371>Du öffnest diese Crate bereits.</gradient>"
+  inventory-full: "<gradient:#ff5f6d:#ffc371>Dein Inventar ist voll. Mache zuerst Platz für den Gewinn.</gradient>"
+  won: "<gradient:#7CFFB2:#F5B642>Du hast</gradient> %reward% <gradient:#7CFFB2:#F5B642>aus</gradient> %crate% <gradient:#7CFFB2:#F5B642>gewonnen.</gradient>"
+  crate-given: "<gradient:#7CFFB2:#48C6EF>Crate Item wurde gegeben.</gradient>"
+  key-given: "<gradient:#7CFFB2:#48C6EF>Key wurde gegeben.</gradient>"
+  keyall: "<gradient:#F5B642:#9B4DFF>Alle Online-Spieler haben einen Key für %crate% erhalten.</gradient>"
+  keyall-received: "<gradient:#F5B642:#9B4DFF>Du hast %amount%x Key für %crate% erhalten.</gradient>"
+  milestone-key: "<gradient:#F5B642:#9B4DFF>Milestone erreicht: Du hast einen Key für %crate% erhalten.</gradient>"
+broadcast:
+  enabled: true
+  message: "<newline><dark_gray><strikethrough>                                                    </strikethrough></dark_gray><newline><bold><gradient:#F5B642:#9B4DFF>        EMPIRECRATES DROP</gradient></bold><newline><newline><gradient:#FFFFFF:#F5B642>%player%</gradient> <gray>%message%</gray><newline><newline>%reward%<newline><newline><dark_gray>aus</dark_gray> <gradient:#F5B642:#9B4DFF>%crate%</gradient> <dark_gray>|</dark_gray> %rarity% <dark_gray>|</dark_gray> <gray>%chance%% Chance</gray><newline><dark_gray><strikethrough>                                                    </strikethrough></dark_gray><newline>"
+  random-messages:
+    - "hat einen seltenen Gewinn gezogen"
+    - "hat die Crate geöffnet und abgeräumt"
+    - "hat einen Empire-Drop erwischt"
+    - "hat das Glück auf seiner Seite"
+    - "hat einen starken Gewinn herausgezogen"
+    - "hat den Jackpot-Vibe gefunden"
+    - "hat die Crate komplett überrascht"
+    - "hat einen seltenen Schatz gefunden"
+    - "hat einen Drop aus der Crate gerissen"
+    - "hat beim Öffnen richtig geglänzt"
+    - "hat sich einen besonderen Gewinn gesichert"
+    - "hat die Belohnung des Abends gezogen"
+    - "hat einen wertvollen Fund gemacht"
+    - "hat aus der Crate etwas Besonderes bekommen"
+    - "hat die Gewinnchance perfekt getroffen"
+    - "hat mit diesem Drop alle Blicke bekommen"
+    - "hat einen mächtigen Reward gezogen"
+    - "hat die Crate zum Leuchten gebracht"
+    - "hat einen seltenen Moment erwischt"
+    - "hat aus der Crate etwas Starkes gezogen"
+    - "hat sein Glück direkt eingelöst"
+    - "hat einen Drop mit Stil bekommen"
+    - "hat der Crate ihr Geheimnis entlockt"
+    - "hat eine besondere Belohnung abgestaubt"
+    - "hat einen Gewinn gezogen, der auffällt"
+    - "hat einen Empire-Moment gelandet"
+    - "hat die Crate sauber geknackt"
+    - "hat einen Drop aus den Sternen gezogen"
+    - "hat die Chance auf seiner Seite gehabt"
+    - "hat einen seltenen Fund präsentiert"
+  default-enabled-rarities:
+    - LEGENDAER
+    - MYSTISCH
+    - JACKPOT
+animation:
+  ticks-before-reveal: 64
+  hologram-duration-ticks: 110
+  spin-radius: 1.2
+  reward-cycle-ticks: 8
+  item-scale: 0.42
+  model-cooldown-after-reveal-ticks: 50
+hologram:
+  update-ticks: 40
+  view-distance: 9.0
+keyall-timer:
+  enabled: false
+  crate-id: ""
+  amount: 1
+  interval-minutes: 60

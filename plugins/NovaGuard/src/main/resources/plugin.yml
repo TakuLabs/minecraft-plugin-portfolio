@@ -1,0 +1,40 @@
+name: NovaGuard
+version: ${project.version}
+main: de.otaku.novaguard.NovaGuard
+api-version: '1.21'
+authors:
+  - ExamplePlayer
+depend:
+  - ProtocolLib
+description: Security plugin with IP limits, blacklist/whitelist controls, and packet spam monitoring.
+commands:
+  novaguard:
+    description: NovaGuard administration command.
+    usage: /novaguard
+    aliases:
+      - ng
+permissions:
+  novaguard.admin:
+    default: op
+  novaguard.help:
+    default: true
+  novaguard.reload:
+    default: op
+  novaguard.status:
+    default: op
+  novaguard.packetinfo:
+    default: op
+  novaguard.whitelist.manage:
+    default: op
+  novaguard.blacklist.manage:
+    default: op
+  novaguard.ipblacklist.manage:
+    default: op
+  novaguard.iplimit.manage:
+    default: op
+  novaguard.performance.view:
+    default: op
+  novaguard.iplimit.bypass:
+    default: false
+  novaguard.packet.bypass:
+    default: false

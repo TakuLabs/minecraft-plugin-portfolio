@@ -1,0 +1,24 @@
+settings:
+  gui-size: 54
+  currency-format: "#,##0.00"
+  default-listing-duration-hours: 72
+  max-listing-duration-hours: 168
+  default-sell-price: 100
+  price-step: 100
+  duration-step-hours: 24
+  fee-percent-per-extra-day: 2.0
+
+limits:
+  default-active-listings: 3
+  permission-limits:
+    otakuauctionhouse.limit.5: 5
+    otakuauctionhouse.limit.10: 10
+    otakuauctionhouse.limit.25: 25
+    otakuauctionhouse.limit.50: 50
+
+colors:
+  title: "<bold><gradient:#6D28D9:#06B6D4>Mythic Auktionshaus</gradient></bold>"
+  prefix: "<dark_gray>[</dark_gray><bold><gradient:#6D28D9:#06B6D4>MythicAH</gradient></bold><dark_gray>]</dark_gray> "
+  accent: "#00F5D4"
+  purple: "#8A2BE2"
+  blue: "#2D7DFF"

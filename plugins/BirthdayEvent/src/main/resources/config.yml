@@ -1,0 +1,62 @@
+# BirthdayEvent - einmaliges Geburtstagsevent fuer einen Spieler.
+# Alle Event-Zeiten werden ausdrücklich mit Europe/Berlin berechnet.
+
+event:
+  timezone: "Europe/Berlin"
+  date: "2026-08-22"
+  start-time: "00:00:00"
+  duration-hours: 24
+  age: 15
+  birthday-player-name: "BirthdayPlayer"
+
+title:
+  enabled: true
+  fade-in-ticks: 10
+  stay-ticks: 80
+  fade-out-ticks: 20
+
+firework:
+  enabled: true
+
+rewards:
+  command: "crate key give %player% %crate% %amount%"
+
+  crates:
+    apex:
+      enabled: true
+      min-keys: 1
+      max-keys: 3
+      weight: 1
+    dragon:
+      enabled: true
+      min-keys: 1
+      max-keys: 3
+      weight: 1
+    gott:
+      enabled: true
+      min-keys: 1
+      max-keys: 2
+      weight: 1
+    infinity:
+      enabled: true
+      min-keys: 1
+      max-keys: 1
+      weight: 1
+    keyall:
+      enabled: true
+      min-keys: 1
+      max-keys: 3
+      weight: 1
+    nova:
+      enabled: true
+      min-keys: 1
+      max-keys: 3
+      weight: 1
+    tool:
+      enabled: true
+      min-keys: 1
+      max-keys: 1
+      weight: 1
+
+logging:
+  rewards: true

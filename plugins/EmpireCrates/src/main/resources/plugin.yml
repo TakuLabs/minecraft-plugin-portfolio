@@ -1,0 +1,30 @@
+name: EmpireCrates
+version: 1.14.5
+main: de.otaku.empirecrates.EmpireCratesPlugin
+api-version: '1.21'
+author: ExamplePlayer
+description: Otakus Crate Plugin
+softdepend:
+  - ItemsAdder
+  - ModelEngine
+  - PlaceholderAPI
+commands:
+  empirecrates:
+    aliases: [crate, crates, ocrates]
+    description: Opens the Otakus Crates admin GUI.
+    usage: /<command> [help|admin|set|model|remove|givekey|givecrate|keyall|reload]
+    permission: empirecrates.admin
+    permission-message: ""
+  keyall:
+    description: Gives every online player a crate key.
+    usage: /<command> <crate> [amount]
+    permission: empirecrates.admin
+    permission-message: ""
+permissions:
+  empirecrates.admin:
+    description: Allows managing crates.
+    default: op
+  empirecrates.open:
+    description: Allows opening crates.
+    default: true
+
