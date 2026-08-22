@@ -79,6 +79,7 @@ The complete core project is private. This repository only contains selected sta
 
 - [Project notes](docs/projects.md)
 - [Architecture notes](docs/architecture.md)
+- [Evaluation notes](docs/evaluation.md)
 
 ## About
 
