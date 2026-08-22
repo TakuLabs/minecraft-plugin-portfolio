@@ -27,7 +27,11 @@ Flagship standalone crate system with admin tooling, configurable rewards, visua
 - GUI and block-based opening animations with particles and sounds
 - Optional ModelEngine and custom-item integration points
 
-Screenshots are not included yet. Good future captures would be the admin GUI, reward editor, crate preview and opening animation.
+<p align="center">
+  <img src="assets/empirecrates/crate-showcase.gif" alt="EmpireCrates in-game crate showcase" width="880">
+</p>
+
+<p align="center"><sub>In-game crate showcase and opening system</sub></p>
 
 ---
 

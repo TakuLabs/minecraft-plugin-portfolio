@@ -10,6 +10,12 @@ The project is included as a flagship showcase because it combines several commo
 
 This project shows how a larger Paper plugin can keep gameplay logic, editor workflows, persistence and optional integrations separated while still behaving as one complete server feature.
 
+<p align="center">
+  <img src="../../assets/empirecrates/crate-showcase.gif" alt="EmpireCrates in-game crate showcase" width="880">
+</p>
+
+<p align="center"><sub>In-game crate showcase and opening system</sub></p>
+
 ## Key Features
 
 ### Crate Configuration
@@ -65,6 +71,23 @@ This project shows how a larger Paper plugin can keep gameplay logic, editor wor
 - Optional ModelEngine support via reflection so the plugin can still run without the dependency
 - Optional ItemsAdder/Excellent-style custom item data support through stored item tags
 
+## Showcase
+
+<table>
+  <tr>
+    <td width="50%" align="center" valign="top">
+      <strong>Admin Interface</strong>
+      <br><br>
+      <img src="../../assets/empirecrates/admin-interface.png" alt="EmpireCrates admin interface" width="100%">
+    </td>
+    <td width="50%" align="center" valign="top">
+      <strong>Reward System</strong>
+      <br><br>
+      <img src="../../assets/empirecrates/reward-editor.png" alt="EmpireCrates reward editor" width="100%">
+    </td>
+  </tr>
+</table>
+
 ## Technical Structure
 
 The plugin is organized around a small set of focused packages:
@@ -100,10 +123,6 @@ mvn clean package
 ```
 
 The generated jar is intentionally not tracked in this portfolio repository.
-
-## Screenshots
-
-No screenshots are included yet. Useful future captures would be the admin dashboard, reward editor, crate preview and an opening animation.
 
 ## Why Included
 
