@@ -40,14 +40,14 @@ Flagship crate-system module extracted from a larger private server core and pre
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h3><a href="plugins/BirthdayEvent">BirthdayEvent</a></h3>
-      <p>Small event plugin for a configured birthday event window.</p>
+      <h3><a href="plugins/SMPShop">SMPShop</a></h3>
+      <p>Server-controlled economy shop with configurable item categories and buy/sell flows.</p>
       <ul>
-        <li>Timezone-aware scheduling</li>
-        <li>Configurable messages and reward command</li>
-        <li>Restart-safe state with unit tests</li>
+        <li>Inventory category menus and quantity selector</li>
+        <li>Configured buy and sell prices</li>
+        <li>Vault, PlayerPoints and PlaceholderAPI hooks</li>
       </ul>
-      <p><code>Java 21 · Paper · Maven · JUnit</code></p>
+      <p><code>Java 21 · Paper · Maven · Vault · YAML</code></p>
     </td>
     <td width="50%" valign="top">
       <h3><a href="plugins/OtakuAuctionHouse">OtakuAuctionHouse</a></h3>
@@ -72,14 +72,14 @@ Flagship crate-system module extracted from a larger private server core and pre
       <p><code>Java 21 · Paper · Maven · ProtocolLib · JUnit</code></p>
     </td>
     <td width="50%" valign="top">
-      <h3><a href="plugins/OtakuScoreboard">OtakuScoreboard</a></h3>
-      <p>Configurable scoreboard and tablist plugin.</p>
+      <h3><a href="plugins/BirthdayEvent">BirthdayEvent</a></h3>
+      <p>Small event plugin for a configured birthday event window.</p>
       <ul>
-        <li>YAML-driven scoreboard rendering</li>
-        <li>PlaceholderAPI integration</li>
-        <li>Tablist, nametag and player toggle services</li>
+        <li>Timezone-aware scheduling</li>
+        <li>Configurable messages and reward command</li>
+        <li>Restart-safe state with unit tests</li>
       </ul>
-      <p><code>Java 21 · Paper · Maven · PlaceholderAPI · YAML</code></p>
+      <p><code>Java 21 · Paper · Maven · JUnit</code></p>
     </td>
   </tr>
 </table>
@@ -91,6 +91,7 @@ Flagship crate-system module extracted from a larger private server core and pre
 - Modular plugin structure
 - Configuration-driven systems
 - Inventory GUI workflows
+- Economy systems and configurable shop workflows
 - Persistent data handling
 - Paper/Bukkit event architecture
 - External API integrations through soft dependencies where possible
@@ -99,7 +100,7 @@ Flagship crate-system module extracted from a larger private server core and pre
 
 **Core:** `Java 21` · `Paper API` · `Bukkit API` · `Maven` · `YAML`
 
-**Selected integrations:** `Vault` · `PlaceholderAPI` · `ProtocolLib` · `ModelEngine`
+**Selected integrations:** `Vault` · `PlayerPoints` · `PlaceholderAPI` · `ProtocolLib` · `ModelEngine`
 
 ## Selected Core Examples
 

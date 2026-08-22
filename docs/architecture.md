@@ -30,6 +30,8 @@ Not every plugin has every package. Smaller plugins keep fewer classes; larger p
 
 `EmpireCrates` is the broadest example in the repository. It originated as a module in a larger private core and is included here as a focused Crates showcase, combining command handling, GUI state, chat prompt editing, YAML persistence, reward models, physical key validation, optional PlaceholderAPI/ModelEngine integration and runtime visual behavior.
 
+`SMPShop` is a focused shop/economy showcase extracted from a larger private server system. Its public copy centers on inventory categories, buy/sell logic, quantity selection, YAML-backed item definitions and optional economy bridges while leaving unrelated private server modules out.
+
 ## Core Examples
 
 The core examples and the extracted EmpireCrates showcase are intentionally limited to public-safe code. They are included to show focused implementation patterns without exposing a complete private server core.

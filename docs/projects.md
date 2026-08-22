@@ -14,11 +14,17 @@ Purpose: extracted crate-system module with rewards, admin tooling, visual openi
 
 Shows the largest focused showcase in this portfolio. EmpireCrates originated inside a larger private core and has been prepared here to demonstrate YAML-backed crate definitions, item and command rewards, physical key validation, rarity/chance handling, admin GUIs, chat prompts, placed crate storage, player milestone progress, PlaceholderAPI support and optional ModelEngine/custom-item integration points.
 
+### SMPShop
+
+Purpose: server-controlled SMP shop with configurable categories, buy/sell prices and inventory workflows.
+
+Shows a focused economy-shop module extracted from a larger private server system. The public copy keeps the shop GUI, quantity selection, item purchase flow, item selling flow, YAML category definitions and optional Vault, PlayerPoints and PlaceholderAPI integrations.
+
 ### OtakuAuctionHouse
 
 Purpose: inventory-based player auction house.
 
-Shows economy integration, menu flow, serialized item storage and permission-based limits.
+Shows player-to-player economy integration, menu flow, serialized item storage and permission-based listing limits.
 
 ### NovaGuard
 
@@ -26,17 +32,9 @@ Purpose: server security plugin for IP limits, access lists and packet monitorin
 
 Shows service separation, rate limiting, ProtocolLib integration, privacy-aware IP handling and unit tests.
 
-### OtakuScoreboard
-
-Purpose: configurable scoreboard and tablist plugin.
-
-Shows repeated UI updates, PlaceholderAPI usage, player toggles and configuration-driven rendering.
-
 ## Shop / Sell Review
 
-Additional shop and sell candidates were reviewed from older local project archives. The strongest variants had real shop functionality, economy hooks and inventory menus, but also bundled server-specific report, Discord, AntiDupe and private-branding concerns.
-
-No shop project was added in this pass. `OtakuAuctionHouse` already covers a strong economy/listing use case, while `OtakuScoreboard` keeps the selected project set more technically varied.
+Shop and sell candidates from local project archives were reviewed for public suitability. `SMPShop` was selected because the shop-specific subsystem could be isolated cleanly while leaving unrelated private server modules out of the portfolio.
 
 ## Core Examples
 

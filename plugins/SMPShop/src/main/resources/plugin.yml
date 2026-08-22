@@ -1,0 +1,31 @@
+name: SMPShop
+version: '1.0.0'
+main: de.takulabs.smpshop.SMPShopPlugin
+api-version: '1.21'
+author: TakuLabs
+description: Configurable SMP shop and sell GUI.
+softdepend:
+  - Vault
+  - PlayerPoints
+  - PlaceholderAPI
+commands:
+  shop:
+    description: Opens the SMP shop.
+    usage: /shop [reload|open <player>]
+permissions:
+  smpshop.*:
+    description: Allows all SMPShop admin commands.
+    default: op
+    children:
+      smpshop.use: true
+      smpshop.reload: true
+      smpshop.open.others: true
+  smpshop.use:
+    description: Allows using /shop.
+    default: true
+  smpshop.reload:
+    description: Allows reloading SMPShop.
+    default: op
+  smpshop.open.others:
+    description: Allows opening the shop for another player.
+    default: op
