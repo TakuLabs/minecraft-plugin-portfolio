@@ -1,31 +1,23 @@
 # TakuLabs
-## Minecraft Plugin Development
+## Java Backend and Minecraft Systems
 
-Java-based Minecraft plugin development focused on clean server systems, gameplay features and maintainable Paper plugins.
+Java-based Minecraft development focused on Paper plugins, backend integrations, economy systems and maintainable server tooling.
 
-[![Java 21](https://img.shields.io/badge/Java-21-2f3437?style=flat-square&logo=openjdk&logoColor=white)](#technologies)
-[![Paper 1.21.x](https://img.shields.io/badge/Paper-1.21.x-2f3437?style=flat-square)](#technologies)
-[![Maven](https://img.shields.io/badge/Maven-Build-2f3437?style=flat-square&logo=apachemaven&logoColor=white)](#technologies)
-[![Minecraft Plugins](https://img.shields.io/badge/Minecraft-Plugins-2f3437?style=flat-square)](#featured-project)
+This repository contains selected public-safe showcase projects and engineering notes. It is not a full private server archive; the goal is to show code structure, system boundaries and the way larger features are split into smaller services.
 
-This repository contains a curated selection of Minecraft Java projects and small core examples. It is intentionally focused: not a full private server archive, but a practical look at how I structure Paper plugins, extracted systems and common server features.
-
----
-
-## Featured Project
+## Featured Projects
 
 ### [EmpireCrates](plugins/EmpireCrates)
 
 Flagship crate-system module extracted from a larger private server core and prepared as a focused public showcase.
 
-`Java 21 · Paper · Maven · PlaceholderAPI · YAML`
+`Java 21` · `Paper` · `Maven` · `PlaceholderAPI` · `YAML`
 
 - YAML-backed crate, key and reward definitions
 - Admin GUI flow with chat prompts for editing crate settings
 - Item and command rewards with rarity, chance and broadcast controls
-- Physical crate keys with PersistentDataContainer-based validation
+- Physical crate keys with `PersistentDataContainer` validation
 - Persistent placed crate and player milestone progress storage
-- GUI and block-based opening animations with particles and sounds
 
 <p align="center">
   <img src="assets/empirecrates/crate-showcase.gif" alt="EmpireCrates in-game crate showcase" width="880">
@@ -33,82 +25,61 @@ Flagship crate-system module extracted from a larger private server core and pre
 
 <p align="center"><sub>In-game crate showcase and opening system</sub></p>
 
----
+### [MythicSpawner](plugins/MythicSpawner)
 
-## Projects
+Documentation-only showcase for a custom spawner system. The private source is not included.
 
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <h3><a href="plugins/SMPShop">SMPShop</a></h3>
-      <p>Server-controlled economy shop with configurable item categories and buy/sell flows.</p>
-      <ul>
-        <li>Inventory category menus and quantity selector</li>
-        <li>Configured buy and sell prices</li>
-        <li>Vault, PlayerPoints and PlaceholderAPI hooks</li>
-      </ul>
-      <p><code>Java 21 · Paper · Maven · Vault · YAML</code></p>
-    </td>
-    <td width="50%" valign="top">
-      <h3><a href="plugins/OtakuAuctionHouse">OtakuAuctionHouse</a></h3>
-      <p>Auction house plugin for listing, browsing and buying player items.</p>
-      <ul>
-        <li>Vault economy integration</li>
-        <li>Inventory menus for listings and confirmations</li>
-        <li>Serialized item storage and listing limits</li>
-      </ul>
-      <p><code>Java 21 · Paper · Maven · Vault · YAML</code></p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3><a href="plugins/NovaGuard">NovaGuard</a></h3>
-      <p>Server protection plugin focused on connection and packet safeguards.</p>
-      <ul>
-        <li>IP account limits</li>
-        <li>Whitelist and blacklist handling</li>
-        <li>ProtocolLib packet-rate monitoring with tests</li>
-      </ul>
-      <p><code>Java 21 · Paper · Maven · ProtocolLib · JUnit</code></p>
-    </td>
-    <td width="50%" valign="top">
-      <h3><a href="plugins/BirthdayEvent">BirthdayEvent</a></h3>
-      <p>Small event plugin for a configured birthday event window.</p>
-      <ul>
-        <li>Timezone-aware scheduling</li>
-        <li>Configurable messages and reward command</li>
-        <li>Restart-safe state with unit tests</li>
-      </ul>
-      <p><code>Java 21 · Paper · Maven · JUnit</code></p>
-    </td>
-  </tr>
-</table>
+`Java 21` · `Paper` · `Maven` · `PersistentDataContainer` · `JUnit`
 
----
+- Custom spawner pickaxe flow with configurable drop and conversion rules
+- Persistent item and block state using Bukkit `PersistentDataContainer`
+- Paginated mob-selection GUI for converted spawners
+- Compatibility guard for virtual spawner plugins
+
+### [Discord / Minecraft Platform](docs/case-studies/discord-minecraft-platform.md)
+
+Architecture case study for a multi-module platform connecting a Paper plugin, Discord bot, database layer and web backend.
+
+`Java 21` · `Paper` · `JDA` · `JDBC` · `OAuth2` · `Maven`
+
+## Plugin Projects
+
+| Project | Focus | Highlights |
+| --- | --- | --- |
+| [SMPShop](plugins/SMPShop) | Economy shop | Category menus, quantity selector, buy/sell pricing, Vault and PlayerPoints hooks |
+| [OtakuAuctionHouse](plugins/OtakuAuctionHouse) | Auction house | Player listings, inventory browsing, purchase flow, serialized item storage |
+| [NovaGuard](plugins/NovaGuard) | Server protection | IP account limits, whitelist/blacklist handling, ProtocolLib packet-rate checks |
+| [BirthdayEvent](plugins/BirthdayEvent) | Timed event | Timezone-aware scheduling, configurable rewards, restart-safe state tests |
+
+## Engineering Case Studies
+
+- [SellChest Performance](docs/case-studies/sellchest-performance.md) - reducing tick impact in a private economy subsystem.
+- [Container Optimization](docs/case-studies/container-optimization.md) - profiling and throttling container/hopper hotspots.
+- [Bounty Abuse Prevention](docs/case-studies/bounty-abuse-prevention.md) - limiting repeated bounty growth from the same player pair.
 
 ## Development Focus
 
-- Modular plugin structure
-- Configuration-driven systems
+- Modular Paper plugin structure
 - Inventory GUI workflows
-- Economy systems and configurable shop workflows
-- Persistent data handling
-- Paper/Bukkit event architecture
-- External API integrations through soft dependencies where possible
+- Configuration-driven behavior
+- Economy and reward systems
+- Persistence boundaries around YAML, JDBC or plugin data stores
+- Soft dependency handling for external APIs
+- Service-level tests where they add confidence
 
 ## Technologies
 
 **Core:** `Java 21` · `Paper API` · `Bukkit API` · `Maven` · `YAML`
 
-**Selected integrations:** `Vault` · `PlayerPoints` · `PlaceholderAPI` · `ProtocolLib` · `ModelEngine`
+**Selected integrations:** `Vault` · `PlayerPoints` · `PlaceholderAPI` · `ProtocolLib` · `ModelEngine` · `JDA` · `JDBC`
 
 ## Selected Core Examples
 
 The complete private core is not included. Only small standalone examples are published.
 
-- [Message Helper](core-examples/message-helper) — formatted MiniMessage help output and legacy RGB gradient helpers.
-- [Offline Player Resolver](core-examples/offline-player-resolver) — UUID/name lookup helper for Bukkit `OfflinePlayer` resolution.
-- [Trade Session State](core-examples/trade-session-state) — small state model for expiring trade requests and ready-state handling.
+- [Message Helper](core-examples/message-helper) - formatted MiniMessage help output and legacy RGB gradient helpers.
+- [Offline Player Resolver](core-examples/offline-player-resolver) - UUID/name lookup helper for Bukkit `OfflinePlayer` resolution.
+- [Trade Session State](core-examples/trade-session-state) - small state model for expiring trade requests and ready-state handling.
 
 ## Documentation
 
@@ -122,11 +93,12 @@ The complete private core is not included. Only small standalone examples are pu
 minecraft-plugin-portfolio/
 ├─ plugins/
 ├─ core-examples/
-└─ docs/
+├─ docs/
+└─ assets/
 ```
 
 ## About
 
-I focus on Java-based Minecraft server development, building smaller plugins and focused server systems. This repository provides a practical look at how I structure and implement those projects.
+I focus on Java-based Minecraft server development, primarily building smaller plugins and focused gameplay or server systems. This portfolio provides a practical overview of how I structure code, work with the Paper API and implement common server features.
 
-No generated jars or private server deployment files are included.
+No generated jars, private deployment files or full private core projects are included.
