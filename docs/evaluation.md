@@ -1,6 +1,6 @@
 # Project Selection
 
-This portfolio contains a deliberately small selection of projects chosen to demonstrate different areas of Minecraft plugin development.
+This portfolio contains a curated selection of Minecraft plugin work. Larger projects receive detailed showcase pages, while smaller plugins are documented through compact catalog entries.
 
 Included projects were selected based on:
 
@@ -10,14 +10,18 @@ Included projects were selected based on:
 - independence from private server infrastructure
 - suitability as public, focused examples
 
-## Included Projects
+## Primary Showcases
 
 - `EmpireCrates`: flagship source showcase for crate definitions, physical key validation, reward handling, inventory GUIs, chat prompts, visual opening behavior, storage classes and optional integrations.
-- `MythicSpawner`: documentation-only showcase for custom spawner behavior, persistent item/block state, GUI pagination and compatibility decisions.
+- `MythicSpawner`: showcase documentation for custom spawner behavior, persistent item/block state, GUI pagination and compatibility decisions.
 - `SMPShop`: economy-shop source showcase with inventory categories, buy/sell pricing, quantity selection, YAML configuration and optional economy integrations.
 - `OtakuAuctionHouse`: menu-driven item listings, Vault economy integration and serialized item storage.
 - `NovaGuard`: service-oriented protection logic with IP account limits, access lists, ProtocolLib packet monitoring and tests.
 - `BirthdayEvent`: scheduled event logic, configuration loading, state persistence and unit-tested reward selection.
+
+## Full Catalog
+
+The broader catalog includes additional real plugins where the public value is a smaller implementation pattern, integration point or command workflow. These pages use selected snippets instead of copying full private projects.
 
 ## Included Case Studies
 
@@ -28,6 +32,6 @@ Included projects were selected based on:
 
 ## Scope
 
-Duplicate versions, very small experiments, server-specific bundles and full private core projects were left out to keep the repository focused and understandable.
+Duplicate versions, obsolete forks, server-specific bundles and previously removed portfolio projects were left out to keep the repository focused and understandable.
 
 Build artifacts are excluded from the repository.

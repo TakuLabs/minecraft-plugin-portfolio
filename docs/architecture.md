@@ -31,15 +31,13 @@ Not every plugin has every package. Smaller plugins keep fewer classes; larger p
 
 ## Included Source Projects
 
-`EmpireCrates` is the broadest source example in the repository. It combines command handling, GUI state, chat prompt editing, YAML persistence, reward models, physical key validation, optional PlaceholderAPI/ModelEngine integration and runtime visual behavior.
+The portfolio now contains a broader plugin catalog with compact pages for small utilities and more detailed pages for larger systems. `EmpireCrates` remains the broadest source showcase, combining command handling, GUI state, chat prompt editing, YAML persistence, reward models, physical key validation, optional integrations and runtime visual behavior.
 
-`SMPShop` centers on inventory categories, buy/sell logic, quantity selection, YAML-backed item definitions and optional economy bridges.
-
-`NovaGuard` keeps connection and packet safeguards behind service classes so the core guard behavior can be tested without relying only on a live server.
+Economy plugins such as the shop, auction, crate, key and sell systems show different approaches to menu-driven workflows and persistence. Utility plugins cover smaller command and quality-of-life features. Security and moderation plugins are represented with selected public-safe excerpts, keeping private detection logic and infrastructure details out of the repository.
 
 ## Documentation-Only Systems
 
-Some systems are represented as architecture notes instead of source code:
+Some systems are represented as architecture notes instead of full source:
 
 - `MythicSpawner`: custom spawner tool and converted-spawner flow
 - `SellChest Performance`: bounded economy work and chunk-level limits
@@ -47,11 +45,11 @@ Some systems are represented as architecture notes instead of source code:
 - `Container Optimization`: hotspot profiling and adaptive throttling
 - `Bounty Abuse Prevention`: pair-based cooldown logic for repeated reward growth
 
-These notes show design boundaries without publishing private server infrastructure.
+These notes show design boundaries without publishing private server infrastructure or complete private implementations.
 
 ## Core Examples
 
-The core examples and extracted source showcases are intentionally limited to public-safe code. They are included to show focused implementation patterns without exposing a complete private server core.
+The core examples, catalog excerpts and extracted source showcases are intentionally limited to public-safe code. They are included to show focused implementation patterns without exposing a complete private server core.
 
 ## Build Artifacts
 
