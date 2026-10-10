@@ -15,14 +15,10 @@ Private messaging and teleport request commands.
 
 - Category: Utilities
 - Focus: Private messaging and teleport request commands
-- Public page uses selected excerpts only; full private source is not copied.
 
 ## Code Snippets
 
 ### 1. src/main/java/de/otaku/novasmp/msgtpa/NovaSMPMsgTpaPlugin.java
-
-Representative source excerpt.
-
 ```java
     private static final Set<String> PRIMARY_COMMANDS = Set.of(
             "msg", "tell", "whisper", "w",

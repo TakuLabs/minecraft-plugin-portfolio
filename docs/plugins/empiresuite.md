@@ -15,14 +15,10 @@ Minimal suite bootstrap for shared server modules.
 
 - Category: Core / Infrastructure
 - Focus: Minimal suite bootstrap for shared server modules
-- Public page uses selected excerpts only; full private source is not copied.
 
 ## Code Snippets
 
 ### 1. src/main/java/de/otaku/mythicempire/MythicEmpirePlugin.java
-
-Representative source excerpt.
-
 ```java
     public void onEnable() {
         saveDefaultConfig();

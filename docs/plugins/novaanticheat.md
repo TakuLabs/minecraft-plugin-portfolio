@@ -15,14 +15,10 @@ Security architecture and event pipeline.
 
 - Category: Moderation / Security
 - Focus: Security architecture and event pipeline
-- Public page uses selected excerpts only; full private source is not copied.
 
 ## Code Snippets
 
 ### 1. src/main/java/de/otaku/nova/anticheat/commands/NacCommand.java
-
-Command handling from the plugin source.
-
 ```java
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if (!sender.hasPermission("novaanticheat.admin")) {
@@ -73,9 +69,6 @@ Command handling from the plugin source.
 ```
 
 ### 2. src/main/java/de/otaku/nova/anticheat/ConfigVersionUpdater.java
-
-Configuration handling from the plugin source.
-
 ```java
     public static void update(JavaPlugin plugin) {
         plugin.saveDefaultConfig();

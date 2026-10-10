@@ -15,14 +15,10 @@ Ender chest persistence and restore behavior.
 
 - Category: Gameplay
 - Focus: Ender chest persistence and restore behavior
-- Public page uses selected excerpts only; full private source is not copied.
 
 ## Code Snippets
 
 ### 1. src/main/java/de/otaku/enderchest/CombatCommandPolicy.java
-
-Command handling from the plugin source.
-
 ```java
     private static final Set<String> BLOCKED_COMMANDS = Set.of(
             "ec",

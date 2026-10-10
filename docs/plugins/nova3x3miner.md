@@ -15,14 +15,10 @@ Custom 3x3 mining tool behavior.
 
 - Category: Gameplay
 - Focus: Custom 3x3 mining tool behavior
-- Public page uses selected excerpts only; full private source is not copied.
 
 ## Code Snippets
 
 ### 1. src/main/java/de/otaku/nova/miner/sell/SellCommand.java
-
-Command handling from the plugin source.
-
 ```java
     public SellCommand(SellService sellService, CommandCooldownManager cooldownManager) {
         this.sellService = sellService;

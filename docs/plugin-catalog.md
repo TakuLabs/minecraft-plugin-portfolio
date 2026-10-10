@@ -1,6 +1,6 @@
 # Plugin Catalog
 
-This catalog lists the deduplicated Minecraft plugins included in this portfolio. Each detail page contains selected real source excerpts from the analyzed project.
+This catalog contains the Minecraft plugins currently included in the portfolio. Each plugin page includes selected code excerpts from the original source.
 
 ## Included Plugins
 
@@ -60,8 +60,8 @@ This catalog lists the deduplicated Minecraft plugins included in this portfolio
 
 ## Excluded Candidates
 
-One explicitly removed portfolio project was kept out of the catalog and is not linked from the public documentation.
+One older portfolio project was intentionally left out and is not linked from the public documentation.
 
 ## Duplicate / Older Source Roots
 
-47 older or duplicate source roots were not listed as separate plugins. They were superseded by newer or canonical source roots during deduplication.
+47 older or duplicate source folders were not listed as separate plugins because a newer or clearer source folder was available.

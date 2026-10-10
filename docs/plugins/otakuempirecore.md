@@ -15,14 +15,10 @@ Large shared core module with economy and GUI systems.
 
 - Category: Core / Infrastructure
 - Focus: Large shared core module with economy and GUI systems
-- Public page uses selected excerpts only; full private source is not copied.
 
 ## Code Snippets
 
 ### 1. src/main/java/de/otaku/keys/KeyCommand.java
-
-Command handling from the plugin source.
-
 ```java
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if (!(sender instanceof Player player)) {
@@ -50,9 +46,6 @@ Command handling from the plugin source.
 ```
 
 ### 2. src/main/java/de/otaku/store/StorePlugin.java
-
-Persistence or state handling from the plugin source.
-
 ```java
     public void onEnable() {
         configFile = ModuleFiles.copyDefault(plugin, "Store/config.yml", new File(ModuleFiles.folder(plugin, "Store"), "config.yml"));
@@ -66,9 +59,6 @@ Persistence or state handling from the plugin source.
 ```
 
 ### 3. src/main/java/de/otaku/daily/DailyCommand.java
-
-Command handling from the plugin source.
-
 ```java
     public DailyCommand(OtakuDailyRewardsPlugin plugin, DailyRewardService rewards, DailyGuiListener guiListener) {
         this.plugin = plugin;

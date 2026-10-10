@@ -15,14 +15,10 @@ Player marketplace and item listings.
 
 - Category: Economy
 - Focus: Player marketplace and item listings
-- Public page uses selected excerpts only; full private source is not copied.
 
 ## Code Snippets
 
 ### 1. src/main/java/de/otaku/nova/ah/commands/AhCommand.java
-
-Command handling from the plugin source.
-
 ```java
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if (sender instanceof Player player && isOnCooldown(player)) {

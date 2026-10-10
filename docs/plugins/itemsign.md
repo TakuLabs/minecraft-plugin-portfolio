@@ -15,14 +15,10 @@ Sign-based item display and interaction helper.
 
 - Category: Utilities
 - Focus: Sign-based item display and interaction helper
-- Public page uses selected excerpts only; full private source is not copied.
 
 ## Code Snippets
 
 ### 1. src/main/java/de/otaakuu/itemsign/LoreCommand.java
-
-Command handling from the plugin source.
-
 ```java
     public boolean onCommand(
             @NotNull CommandSender sender,

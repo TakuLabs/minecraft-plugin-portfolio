@@ -15,14 +15,10 @@ Birthday event scheduling and reward selection.
 
 - Category: Gameplay
 - Focus: Birthday event scheduling and reward selection
-- Public page uses selected excerpts only; full private source is not copied.
 
 ## Code Snippets
 
 ### 1. src/main/java/de/otaku/yorubirthday/event/EventSettings.java
-
-Configuration handling from the plugin source.
-
 ```java
 public record EventSettings(
         ZoneId zone,
@@ -46,9 +42,6 @@ public record EventSettings(
 ```
 
 ### 2. src/main/java/de/otaku/yorubirthday/config/PluginSettings.java
-
-Configuration handling from the plugin source.
-
 ```java
 public record PluginSettings(
         EventSettings event,

@@ -15,14 +15,10 @@ Throwable spawn egg gameplay mechanic.
 
 - Category: Gameplay
 - Focus: Throwable spawn egg gameplay mechanic
-- Public page uses selected excerpts only; full private source is not copied.
 
 ## Code Snippets
 
 ### 1. src/main/java/de/otaku/throwablespawneggs/ThrowableSpawnEggsPlugin.java
-
-Representative source excerpt.
-
 ```java
     public void onEnable() {
         entityTypeKey = new NamespacedKey(this, "entity_type");

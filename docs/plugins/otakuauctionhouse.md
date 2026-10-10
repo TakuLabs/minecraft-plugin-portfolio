@@ -15,14 +15,10 @@ Player marketplace and item listings.
 
 - Category: Economy
 - Focus: Player marketplace and item listings
-- Public page uses selected excerpts only; full private source is not copied.
 
 ## Code Snippets
 
 ### 1. src/main/java/de/otaku/auctionhouse/model/AuctionListing.java
-
-Representative source excerpt.
-
 ```java
 public record AuctionListing(
         UUID id,
@@ -37,9 +33,6 @@ public record AuctionListing(
 ```
 
 ### 2. src/main/java/de/otaku/auctionhouse/storage/ListingStore.java
-
-Persistence or state handling from the plugin source.
-
 ```java
     public ListingStore(OtakuAuctionHousePlugin plugin) {
         this.plugin = plugin;

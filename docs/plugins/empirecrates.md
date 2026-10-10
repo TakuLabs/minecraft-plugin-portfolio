@@ -15,14 +15,10 @@ Crate rewards, keys and GUI management.
 
 - Category: Economy
 - Focus: Crate rewards, keys and GUI management
-- Public page uses selected excerpts only; full private source is not copied.
 
 ## Code Snippets
 
 ### 1. work/ExcellentCratesConverter.java
-
-Representative source excerpt.
-
 ```java
     public static void main(String[] args) throws Exception {
         File source = new File(args[0]);
@@ -45,9 +41,6 @@ Representative source excerpt.
 ```
 
 ### 2. src/main/java/de/otaku/empirecrates/util/Text.java
-
-Representative source excerpt.
-
 ```java
     public static Component mm(String input) {
         if (input == null) {

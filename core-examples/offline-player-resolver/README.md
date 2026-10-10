@@ -11,4 +11,4 @@ Small utility class for resolving a player name or UUID to a Bukkit `OfflinePlay
 
 ## Source
 
-Extracted from a larger private server core. The full core project is not included in this portfolio.
+This was split out from a larger private server core. The full core project is not included.

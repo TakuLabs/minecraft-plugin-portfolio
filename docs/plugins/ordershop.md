@@ -1,6 +1,6 @@
 # OrderShop
 
-Inventory shop and economy workflows.
+Order-based shop commands with Vault economy support.
 
 | Field | Value |
 | --- | --- |
@@ -14,15 +14,11 @@ Inventory shop and economy workflows.
 ## Technical Notes
 
 - Category: Economy
-- Focus: Inventory shop and economy workflows
-- Public page uses selected excerpts only; full private source is not copied.
+- Focus: Order-based shop commands with Vault economy support
 
 ## Code Snippets
 
 ### 1. src/main/java/de/otaku/nova/ordershop/command/OrderCommand.java
-
-Command handling from the plugin source.
-
 ```java
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if (!(sender instanceof Player player)) {
@@ -44,9 +40,6 @@ Command handling from the plugin source.
 ```
 
 ### 2. src/main/java/de/otaku/nova/ordershop/ConfigVersionUpdater.java
-
-Configuration handling from the plugin source.
-
 ```java
     public static void update(JavaPlugin plugin) {
         plugin.saveDefaultConfig();

@@ -1,6 +1,6 @@
 # MythicEmpireSMPShop
 
-Inventory shop and economy workflows.
+SMP shop variant with inventory menus and item pricing.
 
 | Field | Value |
 | --- | --- |
@@ -14,15 +14,11 @@ Inventory shop and economy workflows.
 ## Technical Notes
 
 - Category: Economy
-- Focus: Inventory shop and economy workflows
-- Public page uses selected excerpts only; full private source is not copied.
+- Focus: SMP shop variant with inventory menus and item pricing
 
 ## Code Snippets
 
 ### 1. src/main/java/de/otaku/mythicempire/smp/shop/ShopCommand.java
-
-Command handling from the plugin source.
-
 ```java
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String[] args) {
         if (sender instanceof Player commandPlayer && !plugin.commandCooldownManager().check(commandPlayer, command)) {
@@ -70,9 +66,6 @@ Command handling from the plugin source.
 ```
 
 ### 2. src/main/java/de/otaku/mythicempire/smp/shop/AuctionStore.java
-
-Persistence or state handling from the plugin source.
-
 ```java
 package de.otaku.mythicempire.smp.shop;
 

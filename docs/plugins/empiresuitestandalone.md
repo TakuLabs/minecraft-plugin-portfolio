@@ -15,14 +15,10 @@ Standalone suite bootstrap with module file setup.
 
 - Category: Core / Infrastructure
 - Focus: Standalone suite bootstrap with module file setup
-- Public page uses selected excerpts only; full private source is not copied.
 
 ## Code Snippets
 
 ### 1. src/main/java/de/otaku/core/ModuleFiles.java
-
-Representative source excerpt.
-
 ```java
     public static File folder(JavaPlugin plugin, String moduleName) {
         File folder = new File(plugin.getDataFolder(), moduleName);

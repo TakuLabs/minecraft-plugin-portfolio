@@ -15,14 +15,10 @@ Level-based enchantment progression plugin.
 
 - Category: Gameplay
 - Focus: Level-based enchantment progression plugin
-- Public page uses selected excerpts only; full private source is not copied.
 
 ## Code Snippets
 
 ### 1. src/main/java/de/otaku/levelenchants/LevelEnchantCommand.java
-
-Command handling from the plugin source.
-
 ```java
     public LevelEnchantCommand(JavaPlugin plugin, LevelEnchantService service) {
         this.plugin = plugin;

@@ -2,7 +2,7 @@
 
 `Java 21` · `Paper 1.21.x` · `Maven` · `PersistentDataContainer` · `JUnit`
 
-MythicSpawner is a documentation-only showcase for a custom spawner system. The public portfolio keeps the architecture and feature breakdown, while the private source and server configuration remain outside this repository.
+MythicSpawner documents a custom spawner system without publishing the private source or server configuration. The page keeps the useful parts visible: feature boundaries, event decisions and the GUI flow.
 
 ## Overview
 
@@ -50,4 +50,4 @@ BlockBreakEvent
 
 ## Public Scope
 
-The showcase avoids publishing private gameplay configuration, server economy values and deployment files. It focuses on the system boundaries that are useful for review: event decisions, persistent item state, GUI pagination and compatibility behavior.
+Private gameplay configuration, economy values and deployment files stay out of the repository. The useful review points are the event decisions, persistent item state, GUI pagination and compatibility checks.

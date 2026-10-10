@@ -15,14 +15,10 @@ Gravestone handling for player death drops.
 
 - Category: Gameplay
 - Focus: Gravestone handling for player death drops
-- Public page uses selected excerpts only; full private source is not copied.
 
 ## Code Snippets
 
 ### 1. src/main/java/de/otaku/grabstein/OtakuGrabsteinPlugin.java
-
-Representative source excerpt.
-
 ```java
     public void onEnable() {
         saveDefaultConfig();

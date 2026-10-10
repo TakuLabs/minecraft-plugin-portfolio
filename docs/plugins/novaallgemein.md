@@ -15,14 +15,10 @@ General server utility commands and listeners.
 
 - Category: Other
 - Focus: General server utility commands and listeners
-- Public page uses selected excerpts only; full private source is not copied.
 
 ## Code Snippets
 
 ### 1. src/main/java/de/otaku/nova/allgemein/region/RegionStore.java
-
-Persistence or state handling from the plugin source.
-
 ```java
     public RegionStore(NovaAllgemein plugin, String fileName) {
         this.plugin = plugin;
@@ -32,9 +28,6 @@ Persistence or state handling from the plugin source.
 ```
 
 ### 2. src/main/java/de/otaku/nova/allgemein/commands/WertCommand.java
-
-Command handling from the plugin source.
-
 ```java
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if (!(sender instanceof Player player)) {

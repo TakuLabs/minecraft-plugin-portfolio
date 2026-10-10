@@ -15,14 +15,10 @@ Chat color formatting and player preference handling.
 
 - Category: Utilities
 - Focus: Chat color formatting and player preference handling
-- Public page uses selected excerpts only; full private source is not copied.
 
 ## Code Snippets
 
 ### 1. src/main/java/otaku/chatcolor/ColorCommand.java
-
-Command handling from the plugin source.
-
 ```java
     public ColorCommand(OtakusChatcolorPlugin plugin, ColorManager colorManager, ColorTarget target) {
         this.plugin = plugin;

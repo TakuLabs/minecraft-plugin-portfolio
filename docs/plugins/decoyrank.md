@@ -15,14 +15,10 @@ Command-based visible rank decoy utility.
 
 - Category: Utilities
 - Focus: Command-based visible rank decoy utility
-- Public page uses selected excerpts only; full private source is not copied.
 
 ## Code Snippets
 
 ### 1. src/main/java/otaku/DecoyRankPlugin.java
-
-Representative source excerpt.
-
 ```java
     private static final List<String> KNOWN_RANKS = List.of(
             "skyempire",

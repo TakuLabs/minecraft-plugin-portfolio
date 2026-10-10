@@ -15,14 +15,10 @@ Teleport queue/random teleport logic.
 
 - Category: Utilities
 - Focus: Teleport queue/random teleport logic
-- Public page uses selected excerpts only; full private source is not copied.
 
 ## Code Snippets
 
 ### 1. .mvn/wrapper/MavenWrapperDownloader.java
-
-Representative source excerpt.
-
 ```java
     public static void main(String args[]) {
         System.out.println("- Downloader started");

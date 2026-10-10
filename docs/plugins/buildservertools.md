@@ -15,14 +15,10 @@ Server maintenance commands and operational helpers.
 
 - Category: Utilities
 - Focus: Server maintenance commands and operational helpers
-- Public page uses selected excerpts only; full private source is not copied.
 
 ## Code Snippets
 
 ### 1. src/main/java/de/buildservertools/BuildToolsCommand.java
-
-Command handling from the plugin source.
-
 ```java
     public boolean onCommand(
             @NotNull CommandSender sender,

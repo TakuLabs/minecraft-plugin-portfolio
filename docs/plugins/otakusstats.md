@@ -15,14 +15,10 @@ Player statistics tracking.
 
 - Category: Utilities
 - Focus: Player statistics tracking
-- Public page uses selected excerpts only; full private source is not copied.
 
 ## Code Snippets
 
 ### 1. src/main/java/de/otaku/otakusstats/StatsCommand.java
-
-Command handling from the plugin source.
-
 ```java
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         return switch (command.getName().toLowerCase(Locale.ROOT)) {

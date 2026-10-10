@@ -1,6 +1,6 @@
 # Project Notes
 
-This repository now contains a broad catalog of Minecraft plugins selected for public review. The root README stays compact; detailed plugin notes live under [docs/plugins](plugins/).
+This repository now contains a wider catalog of Minecraft plugins. The root README stays compact; detailed plugin notes live under [docs/plugins](plugins/).
 
 ## Included Plugin Catalog
 
@@ -22,4 +22,4 @@ The original source showcases remain in `plugins/`:
 
 ## Scope
 
-Detail pages use small real excerpts from analyzed source projects. They do not copy complete private plugins, private deployment files or full server codebases.
+Detail pages use small excerpts from the original source. They do not copy complete private plugins, private deployment files or full server codebases.

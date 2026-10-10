@@ -15,14 +15,10 @@ Standalone staff tools and moderation utility suite.
 
 - Category: Core / Infrastructure
 - Focus: Standalone staff tools and moderation utility suite
-- Public page uses selected excerpts only; full private source is not copied.
 
 ## Code Snippets
 
 ### 1. src/main/java/de/otaku/staff/StaffInventoryService.java
-
-Service-level logic selected from the plugin source.
-
 ```java
     public StaffInventoryService(JavaPlugin plugin, OfflinePlayerStore offlinePlayerStore, EnderChestStorage enderChestStorage, EmpireCore empireCore, int enderChestPages) {
         this.plugin = plugin;

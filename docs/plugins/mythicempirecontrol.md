@@ -15,14 +15,10 @@ Paper adapter for Discord/web platform services.
 
 - Category: Core / Infrastructure
 - Focus: Paper adapter for Discord/web platform services
-- Public page uses selected excerpts only; full private source is not copied.
 
 ## Code Snippets
 
 ### 1. src/main/java/com/mythicempire/control/minecraft/tips/PlayerTipConfig.java
-
-Configuration handling from the plugin source.
-
 ```java
 public record PlayerTipConfig(boolean enabled, long intervalMinutes, boolean avoidRepeat, List<PlayerTip> tips,
                               PlayerTipAppearance appearance) {
@@ -60,9 +56,6 @@ public record PlayerTipConfig(boolean enabled, long intervalMinutes, boolean avo
 ```
 
 ### 2. src/main/java/com/mythicempire/control/minecraft/tips/PlayerTipService.java
-
-Service-level logic selected from the plugin source.
-
 ```java
     public PlayerTipService(PlayerTipConfig config, AccountLinkRepository links, PlayerTipSelector selector,
                             PlayerTipMessageFactory messages, PlayerTipPlatform platform, PlayerTipWorker worker,

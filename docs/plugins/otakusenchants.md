@@ -15,14 +15,10 @@ Custom enchantment behavior and item handling.
 
 - Category: Gameplay
 - Focus: Custom enchantment behavior and item handling
-- Public page uses selected excerpts only; full private source is not copied.
 
 ## Code Snippets
 
 ### 1. src/main/java/de/otaku/enchants/OtakusEnchantsPlugin.java
-
-Representative source excerpt.
-
 ```java
     public void onEnable() {
         loreCountKey = new NamespacedKey(this, "generated_lore_lines");

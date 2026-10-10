@@ -11,4 +11,4 @@ Small state model from a head-trading system.
 
 ## Source
 
-Extracted from a larger private server core. The full trading system and private server core are not included in this portfolio.
+This was split out from a larger private trading system. The full system and private server core are not included.

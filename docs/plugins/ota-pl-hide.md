@@ -15,14 +15,10 @@ Permission-based command visibility control.
 
 - Category: Moderation / Security
 - Focus: Permission-based command visibility control
-- Public page uses selected excerpts only; full private source is not copied.
 
 ## Code Snippets
 
 ### 1. src/main/java/de/otaku/permissioncommandvisibility/PermissionCommandVisibilityPlugin.java
-
-Command handling from the plugin source.
-
 ```java
     public void onEnable() {
         saveDefaultConfig();

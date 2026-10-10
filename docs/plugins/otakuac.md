@@ -15,14 +15,10 @@ Security architecture and event pipeline.
 
 - Category: Moderation / Security
 - Focus: Security architecture and event pipeline
-- Public page uses selected excerpts only; full private source is not copied.
 
 ## Code Snippets
 
 ### 1. work/reference/ac/grim/grimac/manager/ParsedCommand.java
-
-Service-level logic selected from the plugin source.
-
 ```java
    public ParsedCommand(int threshold, int interval, String command) {
       this.threshold = threshold;
@@ -32,9 +28,6 @@ Service-level logic selected from the plugin source.
 ```
 
 ### 2. work/reference/ac/grim/grimac/shaded/configuralize/Source.java
-
-Configuration handling from the plugin source.
-
 ```java
    public Source(DynamicConfig config, Class<?> clazz, String resource, File file) {
       this.config = config;
@@ -45,9 +38,6 @@ Configuration handling from the plugin source.
 ```
 
 ### 3. work/reference/ac/grim/grimac/shaded/incendo/cloud/Command.java
-
-Command handling from the plugin source.
-
 ```java
    public Command(final @NonNull List<@NonNull CommandComponent<C>> commandComponents, final @NonNull CommandExecutionHandler<@NonNull C> commandExecutionHandler, final @Nullable Type senderType, final @NonNull Permission permission, final @NonNull CommandMeta commandMeta, final @NonNull CommandDescription commandDescription) {
       this.components = (List)Objects.requireNonNull(commandComponents, "Command components may not be null");

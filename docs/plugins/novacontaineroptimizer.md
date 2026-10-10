@@ -15,14 +15,10 @@ Container/hopper profiling and throttling.
 
 - Category: Core / Infrastructure
 - Focus: Container/hopper profiling and throttling
-- Public page uses selected excerpts only; full private source is not copied.
 
 ## Code Snippets
 
 ### 1. src/main/java/de/takulabs/novacontaineroptimizer/config/PluginConfig.java
-
-Configuration handling from the plugin source.
-
 ```java
 public record PluginConfig(
         boolean profilerEnabled,
@@ -73,9 +69,6 @@ public record PluginConfig(
 ```
 
 ### 2. src/main/java/de/takulabs/novacontaineroptimizer/limit/HopperLimitService.java
-
-Service-level logic selected from the plugin source.
-
 ```java
     public HopperLimitService(boolean enabled, int perChunkLimit) {
         this.enabled = enabled;
@@ -84,9 +77,6 @@ Service-level logic selected from the plugin source.
 ```
 
 ### 3. src/main/java/de/takulabs/novacontaineroptimizer/service/ReconcileService.java
-
-Service-level logic selected from the plugin source.
-
 ```java
     public ReconcileService(Plugin plugin, StatisticsService statisticsService, PluginConfig config) {
         this.plugin = plugin;

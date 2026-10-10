@@ -15,14 +15,10 @@ Marriage/social feature suite for Paper servers.
 
 - Category: Core / Infrastructure
 - Focus: Marriage/social feature suite for Paper servers
-- Public page uses selected excerpts only; full private source is not copied.
 
 ## Code Snippets
 
 ### 1. src/main/java/de/otaku/marry/troll/TrollCommand.java
-
-Command handling from the plugin source.
-
 ```java
     public TrollCommand(OtakuSuitePlugin plugin, TrollGui gui, boolean admin) {
         this.plugin = plugin;

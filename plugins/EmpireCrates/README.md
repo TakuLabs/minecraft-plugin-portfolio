@@ -2,13 +2,13 @@
 
 `Java 21 · Paper · Maven · PlaceholderAPI · YAML`
 
-EmpireCrates is a crate-system module originally developed as part of a larger private Minecraft server core. For this portfolio, the relevant crate system has been extracted and prepared as a focused showcase of its architecture, gameplay logic and administrative tooling.
+EmpireCrates is a crate-system module from a larger private Minecraft server core. This portfolio version keeps the crate logic, admin workflow and integration points that are useful to review.
 
-The full private core is not included. This showcase focuses on the Crates module and the surrounding code needed to demonstrate command handling, inventory GUIs, chat prompts, YAML persistence, optional plugin integrations and runtime visual behavior.
+The full private core is not included. The public version focuses on command handling, inventory GUIs, chat prompts, YAML persistence, optional plugin integrations and runtime visual behavior.
 
 ## Overview
 
-This project shows how a larger private-core feature can be isolated for review while keeping the Crates module's gameplay logic, editor workflows, persistence and optional integrations understandable.
+This project keeps the crate gameplay logic, editor workflow, persistence and optional integrations in one reviewable module.
 
 <p align="center">
   <img src="../../assets/empirecrates/crate-showcase.gif" alt="EmpireCrates in-game crate showcase" width="880">

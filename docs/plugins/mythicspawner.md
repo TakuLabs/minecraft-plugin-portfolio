@@ -15,14 +15,10 @@ Spawner tooling and persistent item/block state.
 
 - Category: Gameplay
 - Focus: Spawner tooling and persistent item/block state
-- Public page uses selected excerpts only; full private source is not copied.
 
 ## Code Snippets
 
 ### 1. src/main/java/de/takulabs/mythicspawner/ConfigService.java
-
-Service-level logic selected from the plugin source.
-
 ```java
     public void reload() {
         plugin.reloadConfig();
@@ -40,9 +36,6 @@ Service-level logic selected from the plugin source.
 ```
 
 ### 2. src/main/java/de/takulabs/mythicspawner/RecipeService.java
-
-Service-level logic selected from the plugin source.
-
 ```java
     public RecipeService(JavaPlugin plugin, PluginKeys keys, ConfigService config, ItemFactory itemFactory) {
         this.plugin = plugin;

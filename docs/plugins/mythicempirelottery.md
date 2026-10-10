@@ -15,14 +15,10 @@ Lottery command flow and reward drawing logic.
 
 - Category: Economy
 - Focus: Lottery command flow and reward drawing logic
-- Public page uses selected excerpts only; full private source is not copied.
 
 ## Code Snippets
 
 ### 1. src/main/java/de/otaku/mythicempire/lottery/OfflinePayouts.java
-
-Representative source excerpt.
-
 ```java
     private static void save(JavaPlugin plugin, YamlConfiguration yaml, File file) {
         try {

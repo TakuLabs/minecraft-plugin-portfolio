@@ -15,14 +15,10 @@ Operator-only item command utilities.
 
 - Category: Utilities
 - Focus: Operator-only item command utilities
-- Public page uses selected excerpts only; full private source is not copied.
 
 ## Code Snippets
 
 ### 1. src/main/java/otaku/operatoritems/OperatorItem.java
-
-Representative source excerpt.
-
 ```java
 package otaku.operatoritems;
 

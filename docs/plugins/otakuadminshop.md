@@ -1,6 +1,6 @@
 # OtakuAdminShop
 
-Inventory shop and economy workflows.
+Admin-controlled shop menus and item pricing.
 
 | Field | Value |
 | --- | --- |
@@ -14,15 +14,11 @@ Inventory shop and economy workflows.
 ## Technical Notes
 
 - Category: Economy
-- Focus: Inventory shop and economy workflows
-- Public page uses selected excerpts only; full private source is not copied.
+- Focus: Admin-controlled shop menus and item pricing
 
 ## Code Snippets
 
 ### 1. src/main/java/de/otaku/adminshop/ShopCommand.java
-
-Command handling from the plugin source.
-
 ```java
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String[] args) {
         if (args.length > 0 && args[0].equalsIgnoreCase("reload")) {

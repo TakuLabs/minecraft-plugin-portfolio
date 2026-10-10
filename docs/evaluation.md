@@ -1,14 +1,14 @@
 # Project Selection
 
-This portfolio contains a curated selection of Minecraft plugin work. Larger projects receive detailed showcase pages, while smaller plugins are documented through compact catalog entries.
+This portfolio contains a selected set of Minecraft plugin work. Larger projects get detailed showcase pages; smaller plugins get compact catalog entries.
 
-Included projects were selected based on:
+Projects were included when they had enough value for a public portfolio:
 
 - project completeness
 - code structure
-- technical variety
-- independence from private server infrastructure
-- suitability as public, focused examples
+- different technical areas
+- clean separation from private server infrastructure
+- enough standalone context to make the code understandable
 
 ## Primary Showcases
 
@@ -21,17 +21,17 @@ Included projects were selected based on:
 
 ## Full Catalog
 
-The broader catalog includes additional real plugins where the public value is a smaller implementation pattern, integration point or command workflow. These pages use selected snippets instead of copying full private projects.
+The full catalog also includes smaller plugins where the useful part is a command flow, integration point or small subsystem. These pages use short snippets instead of copying whole private projects.
 
 ## Included Case Studies
 
-- `SellChest Performance`: selected because it shows a practical tick-budget tradeoff in economy processing.
-- `Discord / Minecraft Platform`: selected because it shows module boundaries across Paper, Discord, persistence and web layers.
-- `Container Optimization`: selected because it demonstrates profiling and adaptive throttling around a different performance problem.
-- `Bounty Abuse Prevention`: selected because it shows a small, testable rule that limits repeated reward growth without changing unrelated kill handling.
+- `SellChest Performance`: a practical tick-budget tradeoff in economy processing.
+- `Discord / Minecraft Platform`: module boundaries across Paper, Discord, persistence and web layers.
+- `Container Optimization`: profiling and adaptive throttling around a different performance problem.
+- `Bounty Abuse Prevention`: a small, testable rule that limits repeated reward growth without changing unrelated kill handling.
 
 ## Scope
 
-Duplicate versions, obsolete forks, server-specific bundles and previously removed portfolio projects were left out to keep the repository focused and understandable.
+Duplicate versions, obsolete forks, server-specific bundles and previously removed portfolio projects were left out so the repository stays readable.
 
 Build artifacts are excluded from the repository.

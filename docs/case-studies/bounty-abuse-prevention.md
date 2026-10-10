@@ -1,6 +1,6 @@
 # Bounty Abuse Prevention
 
-This case study describes a focused anti-farming guard from a private bounty system. The implementation is not published here.
+This note describes a small anti-farming guard from a private bounty system. The implementation is not published here.
 
 ## Problem
 
@@ -28,4 +28,4 @@ Player kill
 
 ## Public Scope
 
-The public note avoids private server values and keeps the focus on the decision boundary: repeated pair detection, persistence and testable time handling.
+Private server values are left out. The useful part is the decision boundary: repeated pair detection, persistence and testable time handling.

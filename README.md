@@ -3,7 +3,7 @@
 
 Java-based Minecraft plugin development focused on Paper systems, backend integrations, gameplay features and maintainable server tooling.
 
-This repository is a public portfolio. It includes selected source showcases, documentation-only project pages and small code excerpts from real plugin projects. Full private server codebases and deployment files are not published.
+This repository is a public portfolio for my Java Minecraft plugin work. It includes a few full showcase folders, project notes and small code excerpts from real plugins. Full private server code, deployment files and private infrastructure are not included.
 
 ## Highlights
 
@@ -44,7 +44,7 @@ This repository is a public portfolio. It includes selected source showcases, do
 
 ## Selected Core Examples
 
-The complete private core is not included. Only small standalone examples are published.
+The full private core is not included. This section only contains small standalone examples.
 
 - [Message Helper](core-examples/message-helper) - formatted MiniMessage help output and legacy RGB gradient helpers.
 - [Offline Player Resolver](core-examples/offline-player-resolver) - UUID/name lookup helper for Bukkit `OfflinePlayer` resolution.
@@ -71,4 +71,4 @@ minecraft-plugin-portfolio/
 
 ## About
 
-I focus on Java-based Minecraft server development, primarily building smaller plugins and focused gameplay or server systems. The portfolio keeps examples reviewable without publishing private infrastructure or complete private server codebases.
+I focus on Java-based Minecraft server development, mostly smaller plugins, gameplay systems and backend-style server tooling. The examples here are kept small enough to review without publishing private infrastructure or full server code.

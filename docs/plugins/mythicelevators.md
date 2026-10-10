@@ -15,14 +15,10 @@ Elevator blocks, movement and configuration.
 
 - Category: Gameplay
 - Focus: Elevator blocks, movement and configuration
-- Public page uses selected excerpts only; full private source is not copied.
 
 ## Code Snippets
 
 ### 1. src/main/java/de/takulabs/mythicelevators/config/WorldMode.java
-
-Configuration handling from the plugin source.
-
 ```java
 package de.takulabs.mythicelevators.config;
 
@@ -34,9 +30,6 @@ public enum WorldMode {
 ```
 
 ### 2. src/main/java/de/takulabs/mythicelevators/config/WorldRules.java
-
-Configuration handling from the plugin source.
-
 ```java
 public record WorldRules(WorldMode mode, Set<String> worlds) {
     public boolean allows(World world) {
@@ -51,9 +44,6 @@ public record WorldRules(WorldMode mode, Set<String> worlds) {
 ```
 
 ### 3. src/main/java/de/takulabs/mythicelevators/config/SoundEffect.java
-
-Configuration handling from the plugin source.
-
 ```java
 package de.takulabs.mythicelevators.config;
 

@@ -15,14 +15,10 @@ Key item and reward command handling.
 
 - Category: Economy
 - Focus: Key item and reward command handling
-- Public page uses selected excerpts only; full private source is not copied.
 
 ## Code Snippets
 
 ### 1. src/main/java/de/otaku/keys/KeyCommand.java
-
-Command handling from the plugin source.
-
 ```java
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if (!(sender instanceof Player player)) {

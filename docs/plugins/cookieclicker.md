@@ -15,14 +15,10 @@ Clicker gameplay systems and persistence.
 
 - Category: Gameplay
 - Focus: Clicker gameplay systems and persistence
-- Public page uses selected excerpts only; full private source is not copied.
 
 ## Code Snippets
 
 ### 1. src/test/java/de/otaku/cookieclicker/config/ConfigTestFiles.java
-
-Configuration handling from the plugin source.
-
 ```java
 package de.otaku.cookieclicker.config;
 
@@ -62,9 +58,6 @@ final class ConfigTestFiles {
 ```
 
 ### 2. src/main/java/de/otaku/cookieclicker/ConfigMigrator.java
-
-Configuration handling from the plugin source.
-
 ```java
     public void migrate() {
         File configFile = new File(plugin.getDataFolder(), "config.yml");
@@ -90,9 +83,6 @@ Configuration handling from the plugin source.
 ```
 
 ### 3. src/main/java/de/otaku/cookieclicker/menu/MenuService.java
-
-Service-level logic selected from the plugin source.
-
 ```java
 package de.otaku.cookieclicker.menu;
 

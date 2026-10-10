@@ -15,14 +15,10 @@ Moderation commands and punishment state.
 
 - Category: Moderation / Security
 - Focus: Moderation commands and punishment state
-- Public page uses selected excerpts only; full private source is not copied.
 
 ## Code Snippets
 
 ### 1. src/main/java/de/otaakuu/novasmp/bansystem/model/BanRecord.java
-
-Representative source excerpt.
-
 ```java
 public record BanRecord(
         UUID targetUuid,
@@ -48,9 +44,6 @@ public record BanRecord(
 ```
 
 ### 2. src/main/java/de/otaakuu/novasmp/bansystem/model/MuteRecord.java
-
-Representative source excerpt.
-
 ```java
 public record MuteRecord(
         UUID targetUuid,

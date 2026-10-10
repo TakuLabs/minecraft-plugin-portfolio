@@ -1,6 +1,6 @@
 # Container Optimization
 
-This case study is based on a separate private plugin for profiling and reducing container or hopper hotspots. It is included as an engineering note because it covers a different problem than shop or sell-chest logic.
+This note comes from work on a private plugin that profiles container and hopper hotspots. It covers a different performance problem than shop menus or sell-chest processing.
 
 ## Problem
 
@@ -34,4 +34,4 @@ Container activity
 
 ## Public Scope
 
-The public repository does not include the private optimizer source, server configuration or operational thresholds. The case study records the design shape and the reason it is separate from ordinary economy plugin work.
+The repository does not include the private optimizer source, server configuration or operational thresholds. The useful part here is the shape of the system and why it is separate from ordinary economy plugin work.

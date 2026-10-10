@@ -15,14 +15,10 @@ Head-system plugin for SMP player utilities.
 
 - Category: Other
 - Focus: Head-system plugin for SMP player utilities
-- Public page uses selected excerpts only; full private source is not copied.
 
 ## Code Snippets
 
 ### 1. src/main/java/de/otaku/staff/StaffInventoryService.java
-
-Service-level logic selected from the plugin source.
-
 ```java
     public StaffInventoryService(JavaPlugin plugin, OfflinePlayerStore offlinePlayerStore) {
         this.plugin = plugin;
@@ -32,9 +28,6 @@ Service-level logic selected from the plugin source.
 ```
 
 ### 2. src/main/java/de/otaku/headsystem/head/HeadResetCommand.java
-
-Command handling from the plugin source.
-
 ```java
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if (!sender.hasPermission("novasmp.headreset")) {

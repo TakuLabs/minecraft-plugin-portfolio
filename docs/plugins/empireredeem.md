@@ -15,14 +15,10 @@ Redeem codes, rewards and validation.
 
 - Category: Economy
 - Focus: Redeem codes, rewards and validation
-- Public page uses selected excerpts only; full private source is not copied.
 
 ## Code Snippets
 
 ### 1. src/main/java/de/otaku/empireredeem/model/Voucher.java
-
-Representative source excerpt.
-
 ```java
 package de.otaku.empireredeem.model;
 
@@ -62,9 +58,6 @@ public class Voucher {
 ```
 
 ### 2. src/main/java/de/otaku/empireredeem/model/RedeemCode.java
-
-Representative source excerpt.
-
 ```java
     public RedeemCode(String code, String voucherName) {
         this.code = code;
@@ -74,9 +67,6 @@ Representative source excerpt.
 ```
 
 ### 3. src/main/java/de/otaku/empireredeem/model/RandomReward.java
-
-Representative source excerpt.
-
 ```java
 package de.otaku.empireredeem.model;
 

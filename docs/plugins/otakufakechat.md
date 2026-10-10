@@ -15,14 +15,10 @@ Fake chat and player-message command utility.
 
 - Category: Utilities
 - Focus: Fake chat and player-message command utility
-- Public page uses selected excerpts only; full private source is not copied.
 
 ## Code Snippets
 
 ### 1. src/main/java/de/otaku/fakechat/FakeChatCommand.java
-
-Command handling from the plugin source.
-
 ```java
     public boolean onCommand(
             @NotNull CommandSender sender,

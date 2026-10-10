@@ -15,14 +15,10 @@ Teleport queue/random teleport logic.
 
 - Category: Utilities
 - Focus: Teleport queue/random teleport logic
-- Public page uses selected excerpts only; full private source is not copied.
 
 ## Code Snippets
 
 ### 1. src/main/java/de/takulabs/rtp/command/RTPCommand.java
-
-Command handling from the plugin source.
-
 ```java
     public RTPCommand(ConfigManager config, RTPGui gui, RTPService rtpService, CooldownService cooldowns, ProtectionService protection) {
         this.config = config;
@@ -34,9 +30,6 @@ Command handling from the plugin source.
 ```
 
 ### 2. src/main/java/de/takulabs/rtp/teleport/RTPService.java
-
-Service-level logic selected from the plugin source.
-
 ```java
     public RTPService(Plugin plugin, RTPSessionRegistry sessions, CooldownService cooldowns, BukkitCooldownStore cooldownStore, ProtectionService protection, DestinationSearchService search, BukkitSafeLocationValidator validator, WarmupService warmup, TeleportAnimation animation, MessageManager messages) {
         this.plugin = plugin;

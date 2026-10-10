@@ -15,14 +15,10 @@ Connection and packet safeguards.
 
 - Category: Moderation / Security
 - Focus: Connection and packet safeguards
-- Public page uses selected excerpts only; full private source is not copied.
 
 ## Code Snippets
 
 ### 1. src/main/java/de/otaku/novaguard/model/ListEntry.java
-
-Representative source excerpt.
-
 ```java
 public record ListEntry(
         UUID uuid,
@@ -43,9 +39,6 @@ public record ListEntry(
 ```
 
 ### 2. src/main/java/de/otaku/novaguard/storage/IpStore.java
-
-Persistence or state handling from the plugin source.
-
 ```java
     public IpStore(JavaPlugin plugin, String fileName) {
         this.plugin = plugin;
@@ -55,9 +48,6 @@ Persistence or state handling from the plugin source.
 ```
 
 ### 3. src/main/java/de/otaku/novaguard/storage/UuidStore.java
-
-Persistence or state handling from the plugin source.
-
 ```java
     public UuidStore(JavaPlugin plugin, String fileName) {
         this.plugin = plugin;

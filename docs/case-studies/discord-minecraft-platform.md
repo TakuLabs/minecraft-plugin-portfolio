@@ -38,4 +38,4 @@ discord-bot      web-backend      minecraft-plugin
 
 ## Public Scope
 
-The portfolio keeps this as an architecture note because publishing the complete platform would expose unrelated private server infrastructure. No runtime configuration, credentials or private deployment details are included.
+This stays as an architecture note because the full platform includes unrelated private server infrastructure. Runtime configuration, credentials and deployment details are not included.

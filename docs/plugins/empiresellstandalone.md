@@ -15,14 +15,10 @@ Standalone sell menu and price-list economy module.
 
 - Category: Economy
 - Focus: Standalone sell menu and price-list economy module
-- Public page uses selected excerpts only; full private source is not copied.
 
 ## Code Snippets
 
 ### 1. src/main/java/de/otaku/empiresell/EmpireSellStandalonePlugin.java
-
-Representative source excerpt.
-
 ```java
     public void onEnable() {
         sellChestKey = new NamespacedKey(this, "sellchest");
